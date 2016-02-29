@@ -1,0 +1,26 @@
+title = "Home"
+url = "/"
+layout = "default"
+description = "Description text"
+is_hidden = 0
+
+[work]
+
+[homeCoffee]
+
+[item]
+
+[home]
+
+[carousel]
+id = 1
+==
+{% component 'carousel' %}
+
+{% component 'work' %}          <!--INCLUDE WORK ITEMS -->
+
+{% component 'item' %}          <!--INCLUDE IF YOU ITEMS -->
+
+{% component 'homeCoffee' %}    <!-- INCLUDE COFFEE ITEMS -->
+
+{% content "plan.htm" %}

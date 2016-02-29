@@ -1,0 +1,16 @@
+[session]
+security = "all"
+==
+{% if user %}
+<li id="wider_on_the_PC">
+    <a href="{{ 'account'|page }}">
+       <button type="button" class="btn btn-default" id="navigate"><i class="glyphicon glyphicon-user"></i>&nbsp;{{ user.name }}</button>
+    </a>
+</li>
+{% else %}
+<a href="{{ 'account'|page }}">
+    <button type="button" class="btn btn-default" id="navigate" style="margin-top: 0px;">
+        <a href="{{ 'account'|page }}" class="btn-auth-group">Login</a> / <a href="{{ 'account'|page }}" class="btn-auth-group">Register</a>
+    </button>
+</a>
+{% endif %}

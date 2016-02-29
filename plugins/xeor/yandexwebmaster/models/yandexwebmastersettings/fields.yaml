@@ -1,0 +1,5 @@
+fields:
+  metrika:
+    label: Your Yandex Metrika Code
+  webmaster:
+    label: Your Yandex Webmaster Code
