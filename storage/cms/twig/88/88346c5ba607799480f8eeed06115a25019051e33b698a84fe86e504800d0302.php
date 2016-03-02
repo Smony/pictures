@@ -19,36 +19,34 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         echo "<div class=\"conteiner\">
     <div class=\"row\">
         <div class=\"col-lg-1\"></div>
+
         <div class=\"col-lg-10 \">
-                
-                ";
+            ";
         // line 6
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("account"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 7
-        echo "
-            <hr />
+        echo "        <hr />
 
+        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\"></div>
 
-            <form data-request=\"onTest\" data-request-update=\"result: '#result'\">
-               <input type=\"text\" name=\"value1\" value=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
-        echo "\"/>
-                <input type=\"text\" name=\"value2\" value=\"";
-        // line 13
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "email", array()), "html", null, true);
-        echo "\" />
+    <!--
+            <form data-request=\"onTest\" data-request-update=\"accountres: '#result'\">
+                <input type=\"text\" name=\"value1\" value=\"\"/>
+                <input type=\"text\" name=\"value2\" value=\"\" />
                 <input type=\"submit\" value=\"upload\">
             </form>
-            <div id=\"#result\"></div>
-
-            ";
+            <div id=\"#result\">
+                ";
         // line 18
-        echo twig_escape_filter($this->env, (isset($context["result"]) ? $context["result"] : null), "html", null, true);
-        echo "
-            
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
+        // line 19
+        echo "            </div>
+-->
+
         </div>
         <div class=\"col-lg-1\"></div>
     </div>
@@ -67,28 +65,30 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  49 => 18,  41 => 13,  37 => 12,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  47 => 19,  43 => 18,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
 /*     <div class="row">*/
 /*         <div class="col-lg-1"></div>*/
+/* */
 /*         <div class="col-lg-10 ">*/
-/*                 */
-/*                 {% component 'account' %}*/
+/*             {% component 'account' %}*/
+/*         <hr />*/
 /* */
-/*             <hr />*/
+/*         <div id="upload" class="dropzone2" style="display:none"></div>*/
 /* */
-/* */
-/*             <form data-request="onTest" data-request-update="result: '#result'">*/
-/*                <input type="text" name="value1" value="{{user.name}}"/>*/
-/*                 <input type="text" name="value2" value="{{user.email}}" />*/
+/*     <!--*/
+/*             <form data-request="onTest" data-request-update="accountres: '#result'">*/
+/*                 <input type="text" name="value1" value=""/>*/
+/*                 <input type="text" name="value2" value="" />*/
 /*                 <input type="submit" value="upload">*/
 /*             </form>*/
-/*             <div id="#result"></div>*/
+/*             <div id="#result">*/
+/*                 {% partial "accountres" %}*/
+/*             </div>*/
+/* -->*/
 /* */
-/*             {{ result }}*/
-/*             */
 /*         </div>*/
 /*         <div class="col-lg-1"></div>*/
 /*     </div>*/

@@ -1,4 +1,4 @@
-1456837325s:3348:"a:2:{s:5:"mtime";i:1456819426;s:7:"content";s:3293:"{{ form_ajax('onUpdate', { model: user }) }}
+1456914760s:3155:"a:2:{s:5:"mtime";i:1456908979;s:7:"content";s:3100:"{{ form_ajax('onUpdate', { model: user }) }}
 
     <!--
         <div class="form-group">
@@ -71,13 +71,6 @@
                 </div>
             </div>
         </div>
-
-    </fieldset>
-
-    <fieldset class="content-group">
-        <legend class="text-bold">Upload images</legend>
-
-        {% component 'imageUploader' %} <!-- include plugin uploader -->
 
     </fieldset>
 

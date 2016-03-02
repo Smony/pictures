@@ -22,9 +22,16 @@ description = "Admin layout"
             'assets/admin/css/bootstrap.css',
             'assets/admin/css/core.css',
             'assets/admin/css/components.css',
-            'assets/admin/css/colors.css'
+            'assets/admin/css/colors.css',
+            'assets/dropzone.css'
         ]|theme }}" rel="stylesheet">
     <!-- /global stylesheets -->
+
+    <!-- Scripts -->
+    <script src="{{ [
+            'assets/js/jquery.js',
+            'assets/js/bootstrap.min.js'
+        ]|theme }}"></script>
 
     <!-- Core JS files -->
     <script src="{{ [
@@ -33,7 +40,9 @@ description = "Admin layout"
             'assets/admin/js/core/app.js',
             'assets/admin/js/pages/dashboard.js',
             'assets/admin/js/core/libraries/jquery.min.js',
-            'assets/admin/js/core/libraries/bootstrap.min.js'
+            'assets/admin/js/core/libraries/bootstrap.min.js',
+            'assets/dropzone.js',
+            'assets/js/js.js'
         ]|theme }}"></script>
     <!-- /core JS files -->
 
@@ -308,6 +317,15 @@ description = "Admin layout"
                     </li>
 
                     <li class="disabled"><a href="scripts:void();"><i class="glyphicon glyphicon-comment"></i> <span>Messages <span class="label bg-blue-400">1</span></span></a></li>
+
+                        <li>
+                            <a
+                                    href="javascript:;"
+                                    onclick="$('#upload').toggle()"><i class="glyphicon glyphicon glyphicon-download-alt"></i>
+                                <span>Upload file</span>
+                            </a>
+                        </li>
+
                     <li>
                         <a
                                 href="javascript:;"
@@ -315,6 +333,9 @@ description = "Admin layout"
                             <span>Deactivate account</span>
                         </a>
                     </li>
+
+
+
                     <!-- /main -->
 
                 </ul>
@@ -411,15 +432,15 @@ description = "Admin layout"
 
         </div>
 
-    <!-- Scripts -->
-    <script src="{{ [
+        <!-- Scripts -->
+        <script src="{{ [
             'assets/js/jquery.js',
             'assets/js/bootstrap.min.js'
         ]|theme }}"></script>
 
-    {% framework extras %}
-    {% framework %}
-    {% scripts %}
+        {% framework extras %}
+        {% framework %}
+        {% scripts %}
 
 
     </div>

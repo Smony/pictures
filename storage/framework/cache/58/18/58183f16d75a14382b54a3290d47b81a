@@ -1,4 +1,4 @@
-1456837324s:4640:"a:6:{s:5:"mtime";i:1456831825;s:7:"content";s:2176:"title = "Account"
+1456915091s:3365:"a:6:{s:5:"mtime";i:1456913689;s:7:"content";s:1574:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -10,23 +10,13 @@ paramCode = "code"
 [session]
 security = "all"
 redirect = "s"
-
-[imageUploader]
-placeholderText = "Click or drag images to upload"
-maxSize = 5
-fileTypes = ".gif,.jpg,.jpeg,.png"
-previewWidth = 100
-previewHeight = 100
-previewMode = "auto"
-previewFluid = 0
 ==
 <?php
-
 function onInit()
 {
     //$this->imageUploader->bindModel('files', Project::find(1));
     //new Project;
-    $this->imageUploader->bindModel('photoTest',new \Rainlab\User\Models\User);
+    #$this->imageUploader->bindModel('photoTest',new \Rainlab\User\Models\User);
 
 
     //var_dump($this->page);
@@ -40,78 +30,57 @@ function onInit()
 
 }
 
-
-
-use Yandex\Disk\DiskClient;
-
-
 function onStart()
 {
 
-    require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
+/*
+    $target = '/'.$path.'/1_new.jpg';
 
-    define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+    if ($diskClient->delete($target)) {
+        echo 'Файл "' . $target . '" был удален';
+    }
 
-    $diskClient = new DiskClient(ACCESS_TOKEN);
-    $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
-
-    $diskSpace = $diskClient->diskSpaceInfo();
-
-    echo ACCESS_TOKEN;
-
-    #echo user.name;
-
-    #$path = $this->page['user'];
-
-    #$dirContent = $diskClient->createDirectory($path);
-
-    #if ($dirContent) {
-
-        #$this['qwe'] = 'Создана новая директория "' . $path . '"!';
-
-    #}
-
+*/
 }
 
 function onTest()
 {
     $value1 = post('value1');
     $value2 = post('value2');
-    $this['result'] = "12 123";
+    $this['answer'] = $value1 + $value2;
 }
-
 ?>
 ==
 <div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
+
         <div class="col-lg-10 ">
-                
-                {% component 'account' %}
+            {% component 'account' %}
+        <hr />
 
-            <hr />
+        <div id="upload" class="dropzone2" style="display:none"></div>
 
-
-            <form data-request="onTest" data-request-update="result: '#result'">
-               <input type="text" name="value1" value="{{user.name}}"/>
-                <input type="text" name="value2" value="{{user.email}}" />
+    <!--
+            <form data-request="onTest" data-request-update="accountres: '#result'">
+                <input type="text" name="value1" value=""/>
+                <input type="text" name="value2" value="" />
                 <input type="submit" value="upload">
             </form>
-            <div id="#result"></div>
+            <div id="#result">
+                {% partial "accountres" %}
+            </div>
+-->
 
-            {{ result }}
-            
         </div>
         <div class="col-lg-1"></div>
     </div>
-</div>
-";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:3:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}s:13:"imageUploader";a:7:{s:15:"placeholderText";s:30:"Click or drag images to upload";s:7:"maxSize";s:1:"5";s:9:"fileTypes";s:20:".gif,.jpg,.jpeg,.png";s:12:"previewWidth";s:3:"100";s:13:"previewHeight";s:3:"100";s:11:"previewMode";s:4:"auto";s:12:"previewFluid";s:1:"0";}}}s:4:"code";s:1119:"
-
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:2:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}}}s:4:"code";s:663:"
 function onInit()
 {
     //$this->imageUploader->bindModel('files', Project::find(1));
     //new Project;
-    $this->imageUploader->bindModel('photoTest',new \Rainlab\User\Models\User);
+    #$this->imageUploader->bindModel('photoTest',new \Rainlab\User\Models\User);
 
 
     //var_dump($this->page);
@@ -125,65 +94,46 @@ function onInit()
 
 }
 
-
-
-use Yandex\Disk\DiskClient;
-
-
 function onStart()
 {
 
-    require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
+/*
+    $target = '/'.$path.'/1_new.jpg';
 
-    define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+    if ($diskClient->delete($target)) {
+        echo 'Файл "' . $target . '" был удален';
+    }
 
-    $diskClient = new DiskClient(ACCESS_TOKEN);
-    $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
-
-    $diskSpace = $diskClient->diskSpaceInfo();
-
-    echo ACCESS_TOKEN;
-
-    #echo user.name;
-
-    #$path = $this->page['user'];
-
-    #$dirContent = $diskClient->createDirectory($path);
-
-    #if ($dirContent) {
-
-        #$this['qwe'] = 'Создана новая директория "' . $path . '"!';
-
-    #}
-
+*/
 }
 
 function onTest()
 {
     $value1 = post('value1');
     $value2 = post('value2');
-    $this['result'] = "12 123";
+    $this['answer'] = $value1 + $value2;
 }
-
-";s:6:"markup";s:665:"<div class="conteiner">
+";s:6:"markup";s:722:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
+
         <div class="col-lg-10 ">
-                
-                {% component 'account' %}
+            {% component 'account' %}
+        <hr />
 
-            <hr />
+        <div id="upload" class="dropzone2" style="display:none"></div>
 
-
-            <form data-request="onTest" data-request-update="result: '#result'">
-               <input type="text" name="value1" value="{{user.name}}"/>
-                <input type="text" name="value2" value="{{user.email}}" />
+    <!--
+            <form data-request="onTest" data-request-update="accountres: '#result'">
+                <input type="text" name="value1" value=""/>
+                <input type="text" name="value2" value="" />
                 <input type="submit" value="upload">
             </form>
-            <div id="#result"></div>
+            <div id="#result">
+                {% partial "accountres" %}
+            </div>
+-->
 
-            {{ result }}
-            
         </div>
         <div class="col-lg-1"></div>
     </div>

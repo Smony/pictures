@@ -105,22 +105,10 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
 
     </fieldset>
 
-    <fieldset class=\"content-group\">
-        <legend class=\"text-bold\">Upload images</legend>
-
-        ";
-        // line 80
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('CMS')->componentFunction("imageUploader"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        echo " <!-- include plugin uploader -->
-
-    </fieldset>
-
     <button type=\"submit\" class=\"btn btn-default\">Save</button>
 
 ";
-        // line 86
+        // line 79
         echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), array("close"));
     }
 
@@ -136,7 +124,7 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
 
     public function getDebugInfo()
     {
-        return array (  124 => 86,  113 => 80,  74 => 44,  60 => 33,  35 => 11,  27 => 6,  19 => 1,);
+        return array (  112 => 79,  74 => 44,  60 => 33,  35 => 11,  27 => 6,  19 => 1,);
     }
 }
 /* {{ form_ajax('onUpdate', { model: user }) }}*/
@@ -212,13 +200,6 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
-/* */
-/*     </fieldset>*/
-/* */
-/*     <fieldset class="content-group">*/
-/*         <legend class="text-bold">Upload images</legend>*/
-/* */
-/*         {% component 'imageUploader' %} <!-- include plugin uploader -->*/
 /* */
 /*     </fieldset>*/
 /* */
