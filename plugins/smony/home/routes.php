@@ -40,7 +40,7 @@
                 '/'.$path.'/',
                 array(
                     'path' => $tempFile,
-                    'size' => filesize($tempFile),
+                     'size' => filesize($tempFile),
                     'name' => time() . '-' . $_FILES['file']['name']
                 )
             );

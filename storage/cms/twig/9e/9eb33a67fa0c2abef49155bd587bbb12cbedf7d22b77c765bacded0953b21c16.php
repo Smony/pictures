@@ -16,7 +16,8 @@ class __TwigTemplate_8592892b860d08178d8174ea053507ef5bd64ff08d74eb514186e14172c
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<form
+        echo "
+<form
     data-request=\"onRegister\">
 
     <div class=\"panel panel-body login-form\">
@@ -116,6 +117,7 @@ class __TwigTemplate_8592892b860d08178d8174ea053507ef5bd64ff08d74eb514186e14172c
         return array (  19 => 1,);
     }
 }
+/* */
 /* <form*/
 /*     data-request="onRegister">*/
 /* */

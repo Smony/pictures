@@ -1,4 +1,4 @@
-1456915091s:3365:"a:6:{s:5:"mtime";i:1456913689;s:7:"content";s:1574:"title = "Account"
+1456935567s:3371:"a:6:{s:5:"mtime";i:1456931121;s:7:"content";s:1577:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -59,7 +59,7 @@ function onTest()
             {% component 'account' %}
         <hr />
 
-        <div id="upload" class="dropzone2" style="display:none"></div>
+        <div id="upload" class="dropzone2" style="display:none">123</div>
 
     <!--
             <form data-request="onTest" data-request-update="accountres: '#result'">
@@ -113,7 +113,7 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:722:"<div class="conteiner">
+";s:6:"markup";s:725:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
@@ -121,7 +121,7 @@ function onTest()
             {% component 'account' %}
         <hr />
 
-        <div id="upload" class="dropzone2" style="display:none"></div>
+        <div id="upload" class="dropzone2" style="display:none">123</div>
 
     <!--
             <form data-request="onTest" data-request-update="accountres: '#result'">

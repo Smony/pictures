@@ -2,7 +2,9 @@
     $(document).ready(function(){
         $("#upload").dropzone({
             url: "/upload",
-            acceptedFiles: 'image/*',
+            acceptedFiles: 'image/*,application/pdf,.psd,.zip,.rar',
+            //maxFilesize: 10,
+
             accept: function(file, done) {
                 console.log(file);
                 done();

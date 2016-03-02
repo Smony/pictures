@@ -2,74 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20409a66-3168-43e4-8b7c-ee79d6c1fdc9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/app/uploads/public/56d/5b0/996/56d5b099614c8795571450.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/app/uploads/public/56d/5b0/d23/56d5b0d230525809498943.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/app/uploads/public/56d/5b9/263/56d5b92634233778888532.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/8d/85/8d8593a04ecc13b77ccfa6dc523dc821" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/3/1456862309-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/smony/home/routes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/cache/12/21/accountres.htm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/combiner/assets/09732c220af07cb9a7935fcdf4cd9c6b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/combiner/assets/49cc34c73f4e84b6595a09449f734573" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/twig/25/25767e30f8acbd2f56fd8554e93a824f8f6207c22cff1d5d27875853e176b647.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/twig/41/419c6b74f72b55ae93746e5d16522b1bfbacf1476430ac498fd4fc509eab37b7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/twig/9e/9eb33a67fa0c2abef49155bd587bbb12cbedf7d22b77c765bacded0953b21c16.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/27/a7/27a7640611558ed8f39709ecc4718758" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/46/5b/465bcc5365823d5529f0c0cdc9b05d4e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/5c/f7/5cf7ad41a634cd1f8b8db90abedeb046" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/a8/77/a8772860d2827ab0f8c14fce0d07a0d4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/ec/86/ec8608e7c6130ef6a3ee9386e2563b5e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/photonj/assets/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/photonj/assets/dropzone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/photonj/assets/js/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/photonj/partials/accountres.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/cache/19/24/404.htm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/combiner/assets/4f669a9a280361954bbc18d53a98197f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/combiner/assets/8af596f06232e50b622c33d7f34a224f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/twig/3e/3ebe115a7044d6c7692d0c2005416ad08121443581b63710588df4b782ad5ce0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/twig/59/59d1472cd7793672148900bbb19381c951309671544281a22e6da74182a5b68c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cms/twig/d2/d25e83659c0839040e87e33eae06195be8c46c971a4984eac15165219882d1ee.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/c83cdbab5fb467236795436363162b4f4851cc24" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/cache/19/24/404.htm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/cms/twig/3e/3ebe115a7044d6c7692d0c2005416ad08121443581b63710588df4b782ad5ce0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/rainlab/user/components/account/update.htm" afterPath="$PROJECT_DIR$/plugins/rainlab/user/components/account/update.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/rainlab/user/Plugin.php" afterPath="$PROJECT_DIR$/plugins/rainlab/user/Plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/rainlab/user/components/account/register.htm" afterPath="$PROJECT_DIR$/plugins/rainlab/user/components/account/register.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/smony/home/routes.php" afterPath="$PROJECT_DIR$/plugins/smony/home/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/15/21/account.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/15/21/account.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/15/64/navigation.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/15/64/navigation.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/17/32/s.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/17/32/s.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/19/58/navigation_footer.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/19/58/navigation_footer.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/74/13/admin.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/74/13/admin.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/79/15/default.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/79/15/default.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/80/84/singin.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/80/84/singin.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/cache/89/10/footer.htm.php" afterPath="$PROJECT_DIR$/storage/cms/cache/89/10/footer.htm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/23/2370712092233581ffa43d12d321203a94cb3edd6e882f0cb537314edb624c37.php" afterPath="$PROJECT_DIR$/storage/cms/twig/23/2370712092233581ffa43d12d321203a94cb3edd6e882f0cb537314edb624c37.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/88/88346c5ba607799480f8eeed06115a25019051e33b698a84fe86e504800d0302.php" afterPath="$PROJECT_DIR$/storage/cms/twig/88/88346c5ba607799480f8eeed06115a25019051e33b698a84fe86e504800d0302.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/de/de8eaee8e03c029ebc7adfa31ce66b5cda2c9c40673f96c6f5d5eaeb5ec5e6cf.php" afterPath="$PROJECT_DIR$/storage/cms/twig/de/de8eaee8e03c029ebc7adfa31ce66b5cda2c9c40673f96c6f5d5eaeb5ec5e6cf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/cms/twig/9e/9eb33a67fa0c2abef49155bd587bbb12cbedf7d22b77c765bacded0953b21c16.php" afterPath="$PROJECT_DIR$/storage/cms/twig/9e/9eb33a67fa0c2abef49155bd587bbb12cbedf7d22b77c765bacded0953b21c16.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/07/ab/07ab43990f8dc9607674e9385b1b6679" afterPath="$PROJECT_DIR$/storage/framework/cache/07/ab/07ab43990f8dc9607674e9385b1b6679" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/0a/63/0a635566cfaf4e38799acaf5e9b03abc" afterPath="$PROJECT_DIR$/storage/framework/cache/0a/63/0a635566cfaf4e38799acaf5e9b03abc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/0d/6b/0d6b1ba336ddc4d8a74d7baeaa71084c" afterPath="$PROJECT_DIR$/storage/framework/cache/0d/6b/0d6b1ba336ddc4d8a74d7baeaa71084c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/12/a5/12a5d656676a479ae703f83b549d69f8" afterPath="$PROJECT_DIR$/storage/framework/cache/12/a5/12a5d656676a479ae703f83b549d69f8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/18/2f/182fe64aa345bdeb11df278c46b1812b" afterPath="$PROJECT_DIR$/storage/framework/cache/18/2f/182fe64aa345bdeb11df278c46b1812b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" afterPath="$PROJECT_DIR$/storage/framework/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/1d/82/1d8222850245f1e21fd9935945dfe467" afterPath="$PROJECT_DIR$/storage/framework/cache/1d/82/1d8222850245f1e21fd9935945dfe467" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/1e/ac/1eacb6323f1eac4f6992be0ee2a0659e" afterPath="$PROJECT_DIR$/storage/framework/cache/1e/ac/1eacb6323f1eac4f6992be0ee2a0659e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/1e/c0/1ec0ac27407e72d2727bd8ecfaea8787" afterPath="$PROJECT_DIR$/storage/framework/cache/1e/c0/1ec0ac27407e72d2727bd8ecfaea8787" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/38/12/381207ba10b33b355e53125755713e9f" afterPath="$PROJECT_DIR$/storage/framework/cache/38/12/381207ba10b33b355e53125755713e9f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/38/e4/38e4ab70339a8b9fcdaa4c06cd12430f" afterPath="$PROJECT_DIR$/storage/framework/cache/38/e4/38e4ab70339a8b9fcdaa4c06cd12430f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/3a/cc/3acc29907da001fb19474ed8e98da5a8" afterPath="$PROJECT_DIR$/storage/framework/cache/3a/cc/3acc29907da001fb19474ed8e98da5a8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/3e/e9/3ee9018fdc0c5ec39d638b380620cffd" afterPath="$PROJECT_DIR$/storage/framework/cache/3e/e9/3ee9018fdc0c5ec39d638b380620cffd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/43/19/4319f6d8c8a23d3b5901eee87e003e67" afterPath="$PROJECT_DIR$/storage/framework/cache/43/19/4319f6d8c8a23d3b5901eee87e003e67" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" afterPath="$PROJECT_DIR$/storage/framework/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/4d/11/4d115a3777a4268c1a01c55f3b32520b" afterPath="$PROJECT_DIR$/storage/framework/cache/4d/11/4d115a3777a4268c1a01c55f3b32520b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" afterPath="$PROJECT_DIR$/storage/framework/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/58/18/58183f16d75a14382b54a3290d47b81a" afterPath="$PROJECT_DIR$/storage/framework/cache/58/18/58183f16d75a14382b54a3290d47b81a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/58/bc/58bc4d576cd3b6b3598ad8d12f2432bd" afterPath="$PROJECT_DIR$/storage/framework/cache/58/bc/58bc4d576cd3b6b3598ad8d12f2432bd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" afterPath="$PROJECT_DIR$/storage/framework/cache/5e/5e/5e5ec738a988de4a91aec04f81fd8768" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" afterPath="$PROJECT_DIR$/storage/framework/cache/60/92/6092f12922a2e92b9326eda3034141f9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/60/d5/60d5401b4c484d749c966b58af764b4b" afterPath="$PROJECT_DIR$/storage/framework/cache/60/d5/60d5401b4c484d749c966b58af764b4b" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/68/ca/68caaeb00bf07a616a46b5c213458ee6" afterPath="$PROJECT_DIR$/storage/framework/cache/68/ca/68caaeb00bf07a616a46b5c213458ee6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/6a/45/6a45ed8c09ec3638d3d6ba851bf7c37a" afterPath="$PROJECT_DIR$/storage/framework/cache/6a/45/6a45ed8c09ec3638d3d6ba851bf7c37a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/6f/4f/6f4fb34eaeefb55d5bb56b7e0841f9a8" afterPath="$PROJECT_DIR$/storage/framework/cache/6f/4f/6f4fb34eaeefb55d5bb56b7e0841f9a8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/76/4d/764d4f89aecceab22169372e20a191a2" afterPath="$PROJECT_DIR$/storage/framework/cache/76/4d/764d4f89aecceab22169372e20a191a2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/84/dc/84dcfa0a2cad83006fa286f2d5424ddb" afterPath="$PROJECT_DIR$/storage/framework/cache/84/dc/84dcfa0a2cad83006fa286f2d5424ddb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/86/25/862533f8cba8c57cc75c166f32a24ee8" afterPath="$PROJECT_DIR$/storage/framework/cache/86/25/862533f8cba8c57cc75c166f32a24ee8" />
@@ -82,10 +39,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d0/16/d016b8431641e70d523e4085db855cdc" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/16/d016b8431641e70d523e4085db855cdc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d6/fa/d6fae88e87097df950cb77f9bdc6899e" afterPath="$PROJECT_DIR$/storage/framework/cache/d6/fa/d6fae88e87097df950cb77f9bdc6899e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/d7/38/d7382141bb0a1631b29b70352217e8f4" afterPath="$PROJECT_DIR$/storage/framework/cache/d7/38/d7382141bb0a1631b29b70352217e8f4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/ec/86/ec8608e7c6130ef6a3ee9386e2563b5e" afterPath="$PROJECT_DIR$/storage/framework/cache/ec/86/ec8608e7c6130ef6a3ee9386e2563b5e" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/f0/65/f065f654246a13d259000873d0cd23f8" afterPath="$PROJECT_DIR$/storage/framework/cache/f0/65/f065f654246a13d259000873d0cd23f8" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/f0/e6/f0e63826c7bd9c243494802371a32ead" afterPath="$PROJECT_DIR$/storage/framework/cache/f0/e6/f0e63826c7bd9c243494802371a32ead" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/f1/ad/f1ad443845d474dce7282db9f2abfeb5" afterPath="$PROJECT_DIR$/storage/framework/cache/f1/ad/f1ad443845d474dce7282db9f2abfeb5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/photonj/layouts/admin.htm" afterPath="$PROJECT_DIR$/themes/photonj/layouts/admin.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/b6bfeea90fa2fbf0d4bc668d704afcaecc29f39f" afterPath="$PROJECT_DIR$/storage/framework/sessions/b6bfeea90fa2fbf0d4bc668d704afcaecc29f39f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/photonj/assets/dropzone.js" afterPath="$PROJECT_DIR$/themes/photonj/assets/dropzone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/photonj/assets/js/js.js" afterPath="$PROJECT_DIR$/themes/photonj/assets/js/js.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/photonj/pages/account.htm" afterPath="$PROJECT_DIR$/themes/photonj/pages/account.htm" />
     </list>
     <ignored path="october.nj.biz.iws" />
@@ -111,51 +71,41 @@
       <file leaf-file-name="account.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/photonj/pages/account.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#1033#1413#0" expanded="false" />
+                <element signature="e#1036#1416#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deactivate_link.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/components/account/deactivate_link.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dropzone.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-54.090908">
-              <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/smony/home/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21458626">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/photonj/assets/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.14026402">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dropzone.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.448276">
+              <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -196,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/smony/home/models/social/fields.yaml" />
-        <option value="$PROJECT_DIR$/plugins/smony/home/updates/create_items_table.php" />
         <option value="$PROJECT_DIR$/plugins/smony/home/models/item/columns.yaml" />
         <option value="$PROJECT_DIR$/plugins/smony/home/components/Item.php" />
         <option value="$PROJECT_DIR$/themes/photonj/content/If_you_items.htm" />
@@ -218,7 +166,6 @@
         <option value="$PROJECT_DIR$/plugins/smony/home/Plugin.php" />
         <option value="$PROJECT_DIR$/plugins/smony/home/components/item/default.htm" />
         <option value="$PROJECT_DIR$/plugins/smony/home/components/Work.php" />
-        <option value="$PROJECT_DIR$/plugins/rainlab/user/components/account/register.htm" />
         <option value="$PROJECT_DIR$/plugins/rainlab/user/components/account/default.htm" />
         <option value="$PROJECT_DIR$/plugins/smony/home/components/work/head.htm" />
         <option value="$PROJECT_DIR$/plugins/smony/home/components/work/default.htm" />
@@ -240,13 +187,16 @@
         <option value="$PROJECT_DIR$/themes/photonj/assets/css/style.css" />
         <option value="$PROJECT_DIR$/plugins/responsiv/uploader/components/fileuploader/default.htm" />
         <option value="$PROJECT_DIR$/themes/photonj/partials/accountres.htm" />
-        <option value="$PROJECT_DIR$/themes/photonj/assets/js/js.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/plugins/rainlab/user/components/account/update.htm" />
         <option value="$PROJECT_DIR$/themes/photonj/layouts/admin.htm" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/plugins/rainlab/user/Plugin.php" />
+        <option value="$PROJECT_DIR$/plugins/rainlab/user/components/account/register.htm" />
         <option value="$PROJECT_DIR$/themes/photonj/pages/account.htm" />
         <option value="$PROJECT_DIR$/plugins/smony/home/routes.php" />
+        <option value="$PROJECT_DIR$/themes/photonj/assets/dropzone.js" />
+        <option value="$PROJECT_DIR$/themes/photonj/assets/js/js.js" />
       </list>
     </option>
   </component>
@@ -398,94 +348,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="october.nj.biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pictures.com.ua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="october.nj.biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pictures.com.ua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rainlab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="october.nj.biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pictures.com.ua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rainlab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="october.nj.biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pictures.com.ua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rainlab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -565,7 +427,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16991343" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31385282" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27238807" sideWeight="0.19946092" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,20 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/jiri/map/components/GoogleMap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74375">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/jiri/map/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/responsiv/uploader/updates/version.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -682,13 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.038462">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -846,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/components/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8787158">
@@ -884,69 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/components/account/deactivate_link.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/models/UserGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47685835">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43707713">
           <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/photonj/layouts/admin.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.545454">
-          <caret line="373" column="23" selection-start-line="373" selection-start-column="23" selection-end-line="373" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/photonj/pages/account.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1033#1413#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-54.090908">
-          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -959,10 +734,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49827588">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3155172">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#31#39#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/models/UserGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/photonj/layouts/admin.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.545454">
+          <caret line="373" column="23" selection-start-line="373" selection-start-column="23" selection-end-line="373" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7259526">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/components/account/deactivate_link.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/photonj/pages/account.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1036#1416#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/controllers/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2637931">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#52#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/rainlab/user/components/account/register.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41034484">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/smony/home/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21458626">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/dropzone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.448276">
+          <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/photonj/assets/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14026402">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>

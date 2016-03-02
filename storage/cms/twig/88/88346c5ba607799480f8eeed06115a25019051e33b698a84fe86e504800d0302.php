@@ -29,7 +29,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         // line 7
         echo "        <hr />
 
-        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\"></div>
+        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">123</div>
 
     <!--
             <form data-request=\"onTest\" data-request-update=\"accountres: '#result'\">
@@ -76,7 +76,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*             {% component 'account' %}*/
 /*         <hr />*/
 /* */
-/*         <div id="upload" class="dropzone2" style="display:none"></div>*/
+/*         <div id="upload" class="dropzone2" style="display:none">123</div>*/
 /* */
 /*     <!--*/
 /*             <form data-request="onTest" data-request-update="accountres: '#result'">*/
