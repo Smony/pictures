@@ -61,12 +61,14 @@ function onTest()
 
          <p>  {{ user.groups }} </p>
 
-            {% if user.groups.id == 2 %}
+        <hr />
+            {% if user.groups %}
                 1
             {% else %}
                 2
             {% endif %}
-        <div id="upload" class="dropzone2" style="display:none">123</div>
+
+        <div id="upload" class="dropzone2" style="display:none"></div>
 
     <!--
             <form data-request="onTest" data-request-update="accountres: '#result'">

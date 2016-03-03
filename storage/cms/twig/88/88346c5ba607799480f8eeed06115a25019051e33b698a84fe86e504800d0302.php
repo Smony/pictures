@@ -34,19 +34,21 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "html", null, true);
         echo " </p>
 
+        <hr />
             ";
-        // line 11
-        if (($this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "id", array()) == 2)) {
-            // line 12
+        // line 12
+        if ($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array())) {
+            // line 13
             echo "                1
             ";
         } else {
-            // line 14
+            // line 15
             echo "                2
             ";
         }
-        // line 16
-        echo "        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">123</div>
+        // line 17
+        echo "
+        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\"></div>
 
     <!--
             <form data-request=\"onTest\" data-request-update=\"accountres: '#result'\">
@@ -56,11 +58,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
             </form>
             <div id=\"#result\">
                 ";
-        // line 25
+        // line 27
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 26
+        // line 28
         echo "            </div>
 -->
 
@@ -82,7 +84,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  64 => 26,  60 => 25,  49 => 16,  45 => 14,  41 => 12,  39 => 11,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  66 => 28,  62 => 27,  50 => 17,  46 => 15,  42 => 13,  40 => 12,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -95,12 +97,14 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /* */
 /*          <p>  {{ user.groups }} </p>*/
 /* */
-/*             {% if user.groups.id == 2 %}*/
+/*         <hr />*/
+/*             {% if user.groups %}*/
 /*                 1*/
 /*             {% else %}*/
 /*                 2*/
 /*             {% endif %}*/
-/*         <div id="upload" class="dropzone2" style="display:none">123</div>*/
+/* */
+/*         <div id="upload" class="dropzone2" style="display:none"></div>*/
 /* */
 /*     <!--*/
 /*             <form data-request="onTest" data-request-update="accountres: '#result'">*/
