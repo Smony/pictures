@@ -29,7 +29,24 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         // line 7
         echo "        <hr />
 
-        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">123</div>
+         <p>  ";
+        // line 9
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "html", null, true);
+        echo " </p>
+
+            ";
+        // line 11
+        if (($this->getAttribute($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "id", array()) == 2)) {
+            // line 12
+            echo "                1
+            ";
+        } else {
+            // line 14
+            echo "                2
+            ";
+        }
+        // line 16
+        echo "        <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">123</div>
 
     <!--
             <form data-request=\"onTest\" data-request-update=\"accountres: '#result'\">
@@ -39,11 +56,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
             </form>
             <div id=\"#result\">
                 ";
-        // line 18
+        // line 25
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 19
+        // line 26
         echo "            </div>
 -->
 
@@ -65,7 +82,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  47 => 19,  43 => 18,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  64 => 26,  60 => 25,  49 => 16,  45 => 14,  41 => 12,  39 => 11,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -76,6 +93,13 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*             {% component 'account' %}*/
 /*         <hr />*/
 /* */
+/*          <p>  {{ user.groups }} </p>*/
+/* */
+/*             {% if user.groups.id == 2 %}*/
+/*                 1*/
+/*             {% else %}*/
+/*                 2*/
+/*             {% endif %}*/
 /*         <div id="upload" class="dropzone2" style="display:none">123</div>*/
 /* */
 /*     <!--*/
