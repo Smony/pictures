@@ -1,5 +1,5 @@
 <?php 
-class Cms56d826ba4ae32_1660631319Class extends \Cms\Classes\PageCode
+class Cms56d86e97485de_303383588Class extends \Cms\Classes\PageCode
 {
 public function onInit()
 {
@@ -20,15 +20,25 @@ public function onInit()
 }
 public function onStart()
 {
+    $user = Auth::getUser();
 
-/*
-    $target = '/'.$path.'/1_new.jpg';
+    // переменная $userId должна содержать ID текущего пользователя
+    //$userId = '2';
 
-    if ($diskClient->delete($target)) {
-        echo 'Файл "' . $target . '" был удален';
-    }
+    $key = md5('XMVcDXruK1VC4voS' . '2');
 
-*/
+    // переменная $userName должна содержать имя текущего пользователя
+    $userName = 'vasya';
+
+    // переменная $userGender должна содержать пол текущего пользователя (m или f)
+    $userGender = 'm';
+
+    // переменная $userAvatar должна содержать путь к файлу с аватаром текущего пользователя
+    $userAvatar = "123123";
+
+    // переменная $userProfile должна содержать путь к странице пользователя текущего пользователя
+    $userProfile = "123123";
+
 }
 public function onTest()
 {

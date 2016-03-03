@@ -250,7 +250,17 @@ class User extends UserBase
         return $this->last_login ?: $this->created_at;
     }
 
+
+    #fix
     public $attachMany = [
         'photoTest' => ['System\Models\File']
     ];
+
+    public function getAllUsers()
+    {
+        return User::orderBy('id', 'asc')
+           # ->getLastSeen() > $this->freshTimestamp()->subMinutes(5)
+            ->get();
+
+    }
 }
