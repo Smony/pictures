@@ -55,46 +55,51 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         echo "
 
         <hr />
-         <p>  ";
+                                         <p>  ";
         // line 19
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "html", null, true);
         echo " </p>
-
-         <p>  ";
-        // line 21
+                                         <p>  ";
+        // line 20
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getUser", array(), "method"), "html", null, true);
         echo " </p>
-
-
-
-
-         <p>  ";
-        // line 26
+                                         <p>  ";
+        // line 21
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "isOnline", array(), "method"), "html", null, true);
         echo " </p>
-         <p>  ";
-        // line 27
+                                         <p>  ";
+        // line 22
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getAvatarThumb", array(0 => 100), "method"), "html", null, true);
         echo " </p>
-         <p>  ";
-        // line 28
+                                         <p>  ";
+        // line 23
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getPersistCode", array(), "method"), "html", null, true);
-        echo " </p>
+        echo "
+
+           <p><b>";
+        // line 25
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()), "html", null, true);
+        echo "</b></p>
 
         <hr />
             ";
-        // line 31
+        // line 28
         if (($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array()) == "[{\"id\":1,\"name\":\"Clients\",\"code\":\"clients\",\"description\":\"Clients group for website users.\",\"created_at\":\"2016-02-04 09:22:23\",\"updated_at\":\"2016-02-08 16:39:15\",\"pivot\":{\"user_id\":3,\"user_group_id\":1}}]")) {
-            // line 32
+            // line 29
             echo "            <div id=\"upload\" class=\"dropzone2\" style=\"display:none\"></div>
             ";
         } else {
-            // line 34
+            // line 31
             echo "
             ";
         }
-        // line 36
-        echo "            <iframe width=\"100%\" height=\"450\" frameborder=\"0\" scrolling=\"no\" src=\"http://chatfocus.com/client.php?chat=6174&ext_id=<?=\$userId?>&ext_key=<?=\$key?>&ext_name=<?=\$userName?>&ext_sex=<?=\$userGender?>&ext_avatar=<?=urlencode(\$userAvatar)?>&ext_profile=<?=urlencode(\$userProfile)?>\"></iframe>
+        // line 33
+        echo "            <!--
+                <iframe width=\"100%\" height=\"450\" frameborder=\"0\" scrolling=\"no\" src=\"http://chatfocus.com/client.php?chat=6174&ext_id=<?=\$userId?>&ext_key=<?=\$key?>
+                &ext_name=<?=\$userName?>&ext_sex=<?=\$userGender?>
+                &ext_avatar=<?=urlencode(\$userAvatar)?>&ext_profile=<?=urlencode(\$userProfile)?>\"></iframe>
+            -->
+
             <!--
                     <form data-request=\"onTest\" data-request-update=\"accountres: '#result'\">
                         <input type=\"text\" name=\"value1\" value=\"\"/>
@@ -103,13 +108,13 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
                     </form>
                     <div id=\"#result\">
                         ";
-        // line 44
+        // line 46
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 45
+        // line 47
         echo "                    </div>
-        -->
+            -->
 
         </div>
         <div class=\"col-lg-1\"></div>
@@ -129,7 +134,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  111 => 45,  107 => 44,  97 => 36,  93 => 34,  89 => 32,  87 => 31,  81 => 28,  77 => 27,  73 => 26,  65 => 21,  60 => 19,  55 => 16,  46 => 13,  43 => 12,  39 => 11,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  116 => 47,  112 => 46,  97 => 33,  93 => 31,  89 => 29,  87 => 28,  81 => 25,  76 => 23,  72 => 22,  68 => 21,  64 => 20,  60 => 19,  55 => 16,  46 => 13,  43 => 12,  39 => 11,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -150,16 +155,13 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /* */
 /* */
 /*         <hr />*/
-/*          <p>  {{ user.groups }} </p>*/
+/*                                          <p>  {{ user.groups }} </p>*/
+/*                                          <p>  {{ user.getUser() }} </p>*/
+/*                                          <p>  {{ user.isOnline() }} </p>*/
+/*                                          <p>  {{ user.getAvatarThumb(100) }} </p>*/
+/*                                          <p>  {{ user.getPersistCode() }}*/
 /* */
-/*          <p>  {{ user.getUser() }} </p>*/
-/* */
-/* */
-/* */
-/* */
-/*          <p>  {{ user.isOnline() }} </p>*/
-/*          <p>  {{ user.getAvatarThumb(100) }} </p>*/
-/*          <p>  {{ user.getPersistCode() }} </p>*/
+/*            <p><b>{{ user.groups }}</b></p>*/
 /* */
 /*         <hr />*/
 /*             {% if user.groups == '[{"id":1,"name":"Clients","code":"clients","description":"Clients group for website users.","created_at":"2016-02-04 09:22:23","updated_at":"2016-02-08 16:39:15","pivot":{"user_id":3,"user_group_id":1}}]' %}*/
@@ -167,7 +169,12 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*             {% else %}*/
 /* */
 /*             {% endif %}*/
-/*             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>&ext_name=<?=$userName?>&ext_sex=<?=$userGender?>&ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>*/
+/*             <!--*/
+/*                 <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>*/
+/*                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>*/
+/*                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>*/
+/*             -->*/
+/* */
 /*             <!--*/
 /*                     <form data-request="onTest" data-request-update="accountres: '#result'">*/
 /*                         <input type="text" name="value1" value=""/>*/
@@ -177,7 +184,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*                     <div id="#result">*/
 /*                         {% partial "accountres" %}*/
 /*                     </div>*/
-/*         -->*/
+/*             -->*/
 /* */
 /*         </div>*/
 /*         <div class="col-lg-1"></div>*/
