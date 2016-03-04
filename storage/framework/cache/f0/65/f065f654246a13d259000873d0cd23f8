@@ -1,4 +1,4 @@
-1457089199s:40697:"a:6:{s:5:"mtime";i:1457020095;s:7:"content";s:20268:"description = "Admin layout"
+1457104076s:44851:"a:6:{s:5:"mtime";i:1457101798;s:7:"content";s:22345:"description = "Admin layout"
 
 ==
 <!DOCTYPE html>
@@ -185,13 +185,55 @@
     -->
             </li>
             {% if user %}
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-people"></i>
+                    <span class="visible-xs-inline-block position-right">Users</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-content">
+                    <div class="dropdown-content-heading">
+                        Users online
+                        <ul class="icons-list">
+                            <li><a href="#"><i class="icon-gear"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="media-list dropdown-content-body width-300">
+
+
+                                {% for userAllOnly in user.getAllUsers() %}
+                                    <li class="media">
+                                        <div class="media-left"><img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt=""></div>
+                                        <div class="media-body">
+                                            <a href="#" class="media-heading text-semibold">{{ userAllOnly.name }} {{ userAllOnly.surname }}</a>
+                                            <span class="display-block text-muted text-size-small">{{ userAllOnly.email }} </span>
+                                        </div>
+                                        <div class="media-right media-middle"><span class="status-mark border-success"></span><span class="status-mark border-danger"></span></div>
+                                    </li>
+                                {% endfor %}
+
+
+
+                    </ul>
+
+                    <div class="dropdown-content-footer">
+                        <a href="#" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
+                    </div>
+                </div>
+            </li>
+
+
             <li class="dropdown disabled">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="icon-bubbles4"></i>
                     <span class="visible-xs-inline-block position-right">Messages</span>
                     <span class="badge bg-warning-400">1</span>
                 </a>
-<!--
+
+
+
                 <div class="dropdown-menu dropdown-content width-350">
                     <div class="dropdown-content-heading">
                         Messages
@@ -202,6 +244,7 @@
 
                     <ul class="media-list dropdown-content-body">
 
+                    {% for info in user.getAllUsers() %}
                         <li class="media">
                             <div class="media-left">
                                 <img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt="">
@@ -210,13 +253,14 @@
 
                             <div class="media-body">
                                 <a href="#" class="media-heading">
-                                    <span class="text-semibold">James Alexander</span>
-                                    <span class="media-annotation pull-right">04:58</span>
+                                    <span class="text-semibold">{{ info.name }} {{ info.email }}</span>
+                                    <span class="media-annotation pull-right">{{ info.last_login }}</span>
                                 </a>
 
                                 <span class="text-muted">who knows, maybe that would be the best thing for me...</span>
                             </div>
                         </li>
+                    {% endfor %}
 
 
                     </ul>
@@ -224,7 +268,7 @@
                     <div class="dropdown-content-footer">
                         <a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
                     </div>
-                </div>-->
+                </div>
             </li>
             {% endif %}
 
@@ -450,7 +494,7 @@
 <!-- /page container -->
 
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:12:"Admin layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:20232:"<!DOCTYPE html>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:12:"Admin layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:22309:"<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -634,13 +678,55 @@
     -->
             </li>
             {% if user %}
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-people"></i>
+                    <span class="visible-xs-inline-block position-right">Users</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-content">
+                    <div class="dropdown-content-heading">
+                        Users online
+                        <ul class="icons-list">
+                            <li><a href="#"><i class="icon-gear"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="media-list dropdown-content-body width-300">
+
+
+                                {% for userAllOnly in user.getAllUsers() %}
+                                    <li class="media">
+                                        <div class="media-left"><img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt=""></div>
+                                        <div class="media-body">
+                                            <a href="#" class="media-heading text-semibold">{{ userAllOnly.name }} {{ userAllOnly.surname }}</a>
+                                            <span class="display-block text-muted text-size-small">{{ userAllOnly.email }} </span>
+                                        </div>
+                                        <div class="media-right media-middle"><span class="status-mark border-success"></span><span class="status-mark border-danger"></span></div>
+                                    </li>
+                                {% endfor %}
+
+
+
+                    </ul>
+
+                    <div class="dropdown-content-footer">
+                        <a href="#" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
+                    </div>
+                </div>
+            </li>
+
+
             <li class="dropdown disabled">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="icon-bubbles4"></i>
                     <span class="visible-xs-inline-block position-right">Messages</span>
                     <span class="badge bg-warning-400">1</span>
                 </a>
-<!--
+
+
+
                 <div class="dropdown-menu dropdown-content width-350">
                     <div class="dropdown-content-heading">
                         Messages
@@ -651,6 +737,7 @@
 
                     <ul class="media-list dropdown-content-body">
 
+                    {% for info in user.getAllUsers() %}
                         <li class="media">
                             <div class="media-left">
                                 <img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt="">
@@ -659,13 +746,14 @@
 
                             <div class="media-body">
                                 <a href="#" class="media-heading">
-                                    <span class="text-semibold">James Alexander</span>
-                                    <span class="media-annotation pull-right">04:58</span>
+                                    <span class="text-semibold">{{ info.name }} {{ info.email }}</span>
+                                    <span class="media-annotation pull-right">{{ info.last_login }}</span>
                                 </a>
 
                                 <span class="text-muted">who knows, maybe that would be the best thing for me...</span>
                             </div>
                         </li>
+                    {% endfor %}
 
 
                     </ul>
@@ -673,7 +761,7 @@
                     <div class="dropdown-content-footer">
                         <a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
                     </div>
-                </div>-->
+                </div>
             </li>
             {% endif %}
 

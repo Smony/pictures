@@ -1,4 +1,4 @@
-1457089199s:7655:"a:6:{s:5:"mtime";i:1457087774;s:7:"content";s:3718:"title = "Account"
+1457104189s:6677:"a:6:{s:5:"mtime";i:1457103587;s:7:"content";s:3229:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -68,36 +68,31 @@ function onTest()
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
+<!--
+            <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
+                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
+                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
+-->
+            <p>  {{ user.isOnline() }} </p>
 
-            <p>  {{ user.getAllUsers() }} </p>
+            <img src="{{ user.getAvatarThumb(300) }}" class="img-circle img-sm" alt="">
 
-            {% for info in user.getAllUsers() %}
+            {% for userAllOnly in user.getAllUsersOnly() %}
 
-                    <p>{{ info.name }} </p>
+               <p>{{ userAllOnly.id }} - {{ userAllOnly.name }}</p>
 
             {% endfor %}
 
 
-        <hr />
-                                         <p>  {{ user.groups }} </p>
-                                         <p>  {{ user.getUser() }} </p>
-                                         <p>  {{ user.isOnline() }} </p>
-                                         <p>  {{ user.getAvatarThumb(100) }} </p>
-                                         <p>  {{ user.getPersistCode() }}
+        {% for role in user.groups() %}
+            {% if role.code == 'clients' %}
 
-           <p><b>{{ user.groups }}</b></p>
+                <div id="upload" class="dropzone2" style="display:none"></div>
 
-        <hr />
-            {% if user.groups == '[{"id":1,"name":"Clients","code":"clients","description":"Clients group for website users.","created_at":"2016-02-04 09:22:23","updated_at":"2016-02-08 16:39:15","pivot":{"user_id":3,"user_group_id":1}}]' %}
-            <div id="upload" class="dropzone2" style="display:none"></div>
             {% else %}
 
             {% endif %}
-            <!--
-                <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
-                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
-                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
-            -->
+        {% endfor %}
 
             <!--
                     <form data-request="onTest" data-request-update="accountres: '#result'">
@@ -161,43 +156,38 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:2116:"<div class="conteiner">
+";s:6:"markup";s:1627:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
+<!--
+            <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
+                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
+                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
+-->
+            <p>  {{ user.isOnline() }} </p>
 
-            <p>  {{ user.getAllUsers() }} </p>
+            <img src="{{ user.getAvatarThumb(300) }}" class="img-circle img-sm" alt="">
 
-            {% for info in user.getAllUsers() %}
+            {% for userAllOnly in user.getAllUsersOnly() %}
 
-                    <p>{{ info.name }} </p>
+               <p>{{ userAllOnly.id }} - {{ userAllOnly.name }}</p>
 
             {% endfor %}
 
 
-        <hr />
-                                         <p>  {{ user.groups }} </p>
-                                         <p>  {{ user.getUser() }} </p>
-                                         <p>  {{ user.isOnline() }} </p>
-                                         <p>  {{ user.getAvatarThumb(100) }} </p>
-                                         <p>  {{ user.getPersistCode() }}
+        {% for role in user.groups() %}
+            {% if role.code == 'clients' %}
 
-           <p><b>{{ user.groups }}</b></p>
+                <div id="upload" class="dropzone2" style="display:none"></div>
 
-        <hr />
-            {% if user.groups == '[{"id":1,"name":"Clients","code":"clients","description":"Clients group for website users.","created_at":"2016-02-04 09:22:23","updated_at":"2016-02-08 16:39:15","pivot":{"user_id":3,"user_group_id":1}}]' %}
-            <div id="upload" class="dropzone2" style="display:none"></div>
             {% else %}
 
             {% endif %}
-            <!--
-                <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
-                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
-                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
-            -->
+        {% endfor %}
 
             <!--
                     <form data-request="onTest" data-request-update="accountres: '#result'">
