@@ -258,17 +258,20 @@ class User extends UserBase
 
     public function getAllUsers()
     {
-        return User::orderBy('id', 'asc')
-
+        return User::orderBy('last_login', 'desc')
+            ->limit(5)
            # ->getLastSeen() > $this->freshTimestamp()->subMinutes(5)
             ->get();
 
     }
+
+
     public function getAllUsersOnly()
     {
-        return User::orderBy('id', 'asc')
+        #$this->getLastSeen() > $this->freshTimestamp()->subMinutes(5);
 
-           # ->getLastSeen() > $this->freshTimestamp()->subMinutes(5)
+        return User::orderBy('updated_at', 'asc')
+            ->limit(5)
             ->get();
 
     }

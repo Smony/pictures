@@ -73,26 +73,15 @@ function onTest()
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
 -->
-            <p>  {{ user.isOnline() }} </p>
 
-            <img src="{{ user.getAvatarThumb(300) }}" class="img-circle img-sm" alt="">
-
-            {% for userAllOnly in user.getAllUsersOnly() %}
-
-               <p>{{ userAllOnly.id }} - {{ userAllOnly.name }}</p>
-
-            {% endfor %}
-
-
+        <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-
                 <div id="upload" class="dropzone2" style="display:none"></div>
-
             {% else %}
-
             {% endif %}
         {% endfor %}
+        <!-- END UPLOADS FILES -->
 
             <!--
                     <form data-request="onTest" data-request-update="accountres: '#result'">

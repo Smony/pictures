@@ -263,44 +263,60 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                     <ul class=\"media-list dropdown-content-body width-300\">
 
 
-                                ";
+                        ";
                 // line 203
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getAllUsers", array(), "method"));
                 foreach ($context['_seq'] as $context["_key"] => $context["userAllOnly"]) {
                     // line 204
-                    echo "                                    <li class=\"media\">
-                                        <div class=\"media-left\"><img src=\"";
-                    // line 205
-                    echo $this->env->getExtension('CMS')->themeFilter("assets/admin/images/placeholder.jpg");
+                    echo "
+                            <li class=\"media\">
+                                <div class=\"media-left\"><img src=\"";
+                    // line 206
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["userAllOnly"], "getAvatarThumb", array(), "method"), "html", null, true);
                     echo "\" class=\"img-circle img-sm\" alt=\"\"></div>
-                                        <div class=\"media-body\">
-                                            <a href=\"#\" class=\"media-heading text-semibold\">";
-                    // line 207
+                                <div class=\"media-body\">
+                                    <a href=\"#\" class=\"media-heading text-semibold\">";
+                    // line 208
                     echo twig_escape_filter($this->env, $this->getAttribute($context["userAllOnly"], "name", array()), "html", null, true);
                     echo " ";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["userAllOnly"], "surname", array()), "html", null, true);
                     echo "</a>
-                                            <span class=\"display-block text-muted text-size-small\">";
-                    // line 208
+                                    <span class=\"display-block text-muted text-size-small\">";
+                    // line 209
                     echo twig_escape_filter($this->env, $this->getAttribute($context["userAllOnly"], "email", array()), "html", null, true);
                     echo " </span>
-                                        </div>
-                                        <div class=\"media-right media-middle\"><span class=\"status-mark border-success\"></span><span class=\"status-mark border-danger\"></span></div>
-                                    </li>
+                                </div>
                                 ";
+                    // line 211
+                    if ($this->getAttribute($context["userAllOnly"], "isOnline", array(), "method")) {
+                        // line 212
+                        echo "                                    <div class=\"media-right media-middle\"><span class=\"status-mark border-success\"></span></div>
+                                ";
+                    } else {
+                        // line 214
+                        echo "                                    <div class=\"media-right media-middle\"><span class=\"status-mark border-danger\"></span></div>
+                                ";
+                    }
+                    // line 216
+                    echo "                            </li>
+
+                        ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['userAllOnly'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 213
+                // line 219
                 echo "
 
 
                     </ul>
 
                     <div class=\"dropdown-content-footer\">
-                        <a href=\"#\" data-popup=\"tooltip\" title=\"All users\"><i class=\"icon-menu display-block\"></i></a>
+                        <a href=\"";
+                // line 225
+                echo $this->env->getExtension('CMS')->pageFilter("works");
+                echo "\" data-popup=\"tooltip\" title=\"All users\"><i class=\"icon-menu display-block\"></i></a>
                     </div>
                 </div>
             </li>
@@ -326,15 +342,15 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                     <ul class=\"media-list dropdown-content-body\">
 
                     ";
-                // line 244
+                // line 250
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getAllUsers", array(), "method"));
                 foreach ($context['_seq'] as $context["_key"] => $context["info"]) {
-                    // line 245
+                    // line 251
                     echo "                        <li class=\"media\">
                             <div class=\"media-left\">
                                 <img src=\"";
-                    // line 247
+                    // line 253
                     echo $this->env->getExtension('CMS')->themeFilter("assets/admin/images/placeholder.jpg");
                     echo "\" class=\"img-circle img-sm\" alt=\"\">
                                 <span class=\"badge bg-danger-400 media-badge\">5</span>
@@ -343,13 +359,13 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                             <div class=\"media-body\">
                                 <a href=\"#\" class=\"media-heading\">
                                     <span class=\"text-semibold\">";
-                    // line 253
+                    // line 259
                     echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "name", array()), "html", null, true);
                     echo " ";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "email", array()), "html", null, true);
                     echo "</span>
                                     <span class=\"media-annotation pull-right\">";
-                    // line 254
+                    // line 260
                     echo twig_escape_filter($this->env, $this->getAttribute($context["info"], "last_login", array()), "html", null, true);
                     echo "</span>
                                 </a>
@@ -362,7 +378,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['info'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 261
+                // line 267
                 echo "
 
                     </ul>
@@ -374,20 +390,20 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
             </li>
             ";
             }
-            // line 271
+            // line 277
             echo "
             ";
-            // line 272
+            // line 278
             if ($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array())) {
-                // line 273
+                // line 279
                 echo "                <li class=\"dropdown dropdown-user\">
                     <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">
                         <img src=\"";
-                // line 275
-                echo $this->env->getExtension('CMS')->themeFilter("assets/admin/images/placeholder.jpg");
+                // line 281
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getAvatarThumb", array(), "method"), "html", null, true);
                 echo "\" alt=\"\">
                         <span>";
-                // line 276
+                // line 282
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
                 echo "</span>
                         <i class=\"caret\"></i>
@@ -397,23 +413,23 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                         <li class=\"disabled\"><a href=\"#\"><span class=\"badge bg-teal-400 pull-right\">1</span> <i class=\"icon-comment-discussion\"></i> Messages</a></li>
                         <li class=\"divider\"></li>
                         ";
-                // line 283
+                // line 289
                 if ((isset($context["user"]) ? $context["user"] : null)) {
-                    // line 284
+                    // line 290
                     echo "                            <li><a href=\"scripts:void();\" data-request=\"onLogout\" data-request-data=\"redirect: '/'\"><i class=\"icon-switch2\"></i> Logout</a></li>
                         ";
                 }
-                // line 286
+                // line 292
                 echo "                    </ul>
                 </li>
             ";
             } else {
-                // line 289
+                // line 295
                 echo "            <li class=\"dropdown dropdown-user\">
 
                 <a class=\"dropdown-toggle\" data-toggle=\"dropdown\">
                     <img src=\"";
-                // line 292
+                // line 298
                 echo $this->env->getExtension('CMS')->themeFilter("assets/admin/images/placeholder.jpg");
                 echo "\" alt=\"\">
                     <span>Nobody is logged in</span>
@@ -422,7 +438,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
             </li>
             ";
             }
-            // line 298
+            // line 304
             echo "
 
         </ul>
@@ -431,7 +447,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 <!-- /main navbar -->
 ";
         }
-        // line 305
+        // line 311
         echo "
 
 <!-- Page container -->
@@ -441,9 +457,9 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
     <div class=\"page-content\">
 
 ";
-        // line 313
+        // line 319
         if ((isset($context["user"]) ? $context["user"] : null)) {
-            // line 314
+            // line 320
             echo "\t<!-- Main sidebar -->
 <div class=\"sidebar sidebar-main\">
     <div class=\"sidebar-content\">
@@ -453,17 +469,17 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
             <div class=\"category-content\">
                 <div class=\"media\">
                     <a href=\"#\" class=\"media-left\"><img src=\"";
-            // line 322
-            echo $this->env->getExtension('CMS')->themeFilter("assets/admin/images/placeholder.jpg");
+            // line 328
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "getAvatarThumb", array(), "method"), "html", null, true);
             echo "\" class=\"img-circle img-sm\" alt=\"\"></a>
                     <div class=\"media-body\">
                         <span class=\"media-heading text-semibold\">";
-            // line 324
+            // line 330
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
             echo "</span>
                         <div class=\"text-size-mini text-muted\">
                             <i class=\"glyphicon glyphicon-envelope text-size-small\"></i> &nbsp;";
-            // line 326
+            // line 332
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "email", array()), "html", null, true);
             echo "
                         </div>
@@ -490,7 +506,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                     <!-- Main -->
                     <li class=\"navigation-header\"><span>Main</span> <i class=\"icon-menu\" title=\"Main pages\"></i></li>
                     <li class=\"active\"><a href=\"";
-            // line 350
+            // line 356
             echo $this->env->getExtension('CMS')->pageFilter("account");
             echo "\"><i class=\"icon-home4\"></i> <span>HOME</span></a></li>
                     <li>
@@ -535,11 +551,11 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 <!-- /main sidebar -->
 ";
         } else {
-            // line 392
+            // line 398
             echo "
 ";
         }
-        // line 394
+        // line 400
         echo "
 
         <!-- Main content -->
@@ -548,12 +564,12 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
             <!-- Page header -->
             <div class=\"page-header\">
                 ";
-        // line 401
+        // line 407
         if ( !(isset($context["user"]) ? $context["user"] : null)) {
-            // line 402
+            // line 408
             echo "                ";
         } else {
-            // line 403
+            // line 409
             echo "                <div class=\"page-header-content\">
                     <div class=\"page-title\">
                         <h4><i class=\"icon-arrow-left52 position-left\"></i> <span class=\"text-semibold\">Home</span> - Account</h4>
@@ -570,11 +586,11 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                 </div>
                 ";
         }
-        // line 418
+        // line 424
         echo "                <div class=\"breadcrumb-line\">
                     <ul class=\"breadcrumb\">
                         <li><a href=\"";
-        // line 420
+        // line 426
         echo "/";
         echo "\"><i class=\"icon-home2 position-left\"></i> Home</a></li>
                         <li class=\"active\">Account</li>
@@ -617,7 +633,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                         <div class=\"form-horizontal\">
 
                             ";
-        // line 460
+        // line 466
         echo $this->env->getExtension('CMS')->pageFunction();
         echo "                                  <!-- INCLUDE TEMPLATE PAGE -->
 
@@ -637,28 +653,28 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 
         <!-- Scripts -->
         <script src=\"";
-        // line 477
+        // line 483
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/js/jquery.js", 1 => "assets/js/bootstrap.min.js"));
-        // line 480
+        // line 486
         echo "\"></script>
 
         ";
-        // line 482
+        // line 488
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css" rel="stylesheet">'.PHP_EOL;
-        // line 483
+        // line 489
         echo "        ";
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 484
+        // line 490
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 485
+        // line 491
         echo "
 
     </div>
@@ -683,7 +699,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 
     public function getDebugInfo()
     {
-        return array (  662 => 485,  658 => 484,  654 => 483,  647 => 482,  643 => 480,  641 => 477,  621 => 460,  578 => 420,  574 => 418,  557 => 403,  554 => 402,  552 => 401,  543 => 394,  539 => 392,  494 => 350,  467 => 326,  462 => 324,  457 => 322,  447 => 314,  445 => 313,  435 => 305,  426 => 298,  417 => 292,  412 => 289,  407 => 286,  403 => 284,  401 => 283,  391 => 276,  387 => 275,  383 => 273,  381 => 272,  378 => 271,  366 => 261,  353 => 254,  347 => 253,  338 => 247,  334 => 245,  330 => 244,  297 => 213,  286 => 208,  280 => 207,  275 => 205,  272 => 204,  268 => 203,  248 => 185,  246 => 184,  239 => 180,  235 => 179,  231 => 178,  227 => 177,  223 => 176,  219 => 174,  211 => 169,  208 => 168,  206 => 167,  200 => 163,  196 => 161,  192 => 159,  190 => 158,  92 => 65,  87 => 62,  84 => 60,  77 => 55,  75 => 47,  69 => 43,  67 => 34,  62 => 31,  60 => 28,  54 => 24,  52 => 16,  49 => 15,  46 => 14,  42 => 13,  36 => 10,  32 => 9,  27 => 7,  19 => 1,);
+        return array (  678 => 491,  674 => 490,  670 => 489,  663 => 488,  659 => 486,  657 => 483,  637 => 466,  594 => 426,  590 => 424,  573 => 409,  570 => 408,  568 => 407,  559 => 400,  555 => 398,  510 => 356,  483 => 332,  478 => 330,  473 => 328,  463 => 320,  461 => 319,  451 => 311,  442 => 304,  433 => 298,  428 => 295,  423 => 292,  419 => 290,  417 => 289,  407 => 282,  403 => 281,  399 => 279,  397 => 278,  394 => 277,  382 => 267,  369 => 260,  363 => 259,  354 => 253,  350 => 251,  346 => 250,  318 => 225,  310 => 219,  302 => 216,  298 => 214,  294 => 212,  292 => 211,  287 => 209,  281 => 208,  276 => 206,  272 => 204,  268 => 203,  248 => 185,  246 => 184,  239 => 180,  235 => 179,  231 => 178,  227 => 177,  223 => 176,  219 => 174,  211 => 169,  208 => 168,  206 => 167,  200 => 163,  196 => 161,  192 => 159,  190 => 158,  92 => 65,  87 => 62,  84 => 60,  77 => 55,  75 => 47,  69 => 43,  67 => 34,  62 => 31,  60 => 28,  54 => 24,  52 => 16,  49 => 15,  46 => 14,  42 => 13,  36 => 10,  32 => 9,  27 => 7,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -888,23 +904,29 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*                     <ul class="media-list dropdown-content-body width-300">*/
 /* */
 /* */
-/*                                 {% for userAllOnly in user.getAllUsers() %}*/
-/*                                     <li class="media">*/
-/*                                         <div class="media-left"><img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt=""></div>*/
-/*                                         <div class="media-body">*/
-/*                                             <a href="#" class="media-heading text-semibold">{{ userAllOnly.name }} {{ userAllOnly.surname }}</a>*/
-/*                                             <span class="display-block text-muted text-size-small">{{ userAllOnly.email }} </span>*/
-/*                                         </div>*/
-/*                                         <div class="media-right media-middle"><span class="status-mark border-success"></span><span class="status-mark border-danger"></span></div>*/
-/*                                     </li>*/
-/*                                 {% endfor %}*/
+/*                         {% for userAllOnly in user.getAllUsers() %}*/
+/* */
+/*                             <li class="media">*/
+/*                                 <div class="media-left"><img src="{{ userAllOnly.getAvatarThumb() }}" class="img-circle img-sm" alt=""></div>*/
+/*                                 <div class="media-body">*/
+/*                                     <a href="#" class="media-heading text-semibold">{{ userAllOnly.name }} {{ userAllOnly.surname }}</a>*/
+/*                                     <span class="display-block text-muted text-size-small">{{ userAllOnly.email }} </span>*/
+/*                                 </div>*/
+/*                                 {% if userAllOnly.isOnline() %}*/
+/*                                     <div class="media-right media-middle"><span class="status-mark border-success"></span></div>*/
+/*                                 {% else %}*/
+/*                                     <div class="media-right media-middle"><span class="status-mark border-danger"></span></div>*/
+/*                                 {% endif %}*/
+/*                             </li>*/
+/* */
+/*                         {% endfor %}*/
 /* */
 /* */
 /* */
 /*                     </ul>*/
 /* */
 /*                     <div class="dropdown-content-footer">*/
-/*                         <a href="#" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>*/
+/*                         <a href="{{ 'works'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>*/
 /*                     </div>*/
 /*                 </div>*/
 /*             </li>*/
@@ -960,7 +982,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*             {% if user.name %}*/
 /*                 <li class="dropdown dropdown-user">*/
 /*                     <a class="dropdown-toggle" data-toggle="dropdown">*/
-/*                         <img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" alt="">*/
+/*                         <img src="{{ user.getAvatarThumb() }}" alt="">*/
 /*                         <span>{{ user.name }}</span>*/
 /*                         <i class="caret"></i>*/
 /*                     </a>*/
@@ -1007,7 +1029,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*         <div class="sidebar-user">*/
 /*             <div class="category-content">*/
 /*                 <div class="media">*/
-/*                     <a href="#" class="media-left"><img src="{{ 'assets/admin/images/placeholder.jpg'|theme }}" class="img-circle img-sm" alt=""></a>*/
+/*                     <a href="#" class="media-left"><img src="{{ user.getAvatarThumb() }}" class="img-circle img-sm" alt=""></a>*/
 /*                     <div class="media-body">*/
 /*                         <span class="media-heading text-semibold">{{ user.name }}</span>*/
 /*                         <div class="text-size-mini text-muted">*/

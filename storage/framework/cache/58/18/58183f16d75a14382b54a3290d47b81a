@@ -1,4 +1,4 @@
-1457104189s:6677:"a:6:{s:5:"mtime";i:1457103587;s:7:"content";s:3229:"title = "Account"
+1457111123s:6201:"a:6:{s:5:"mtime";i:1457109092;s:7:"content";s:2991:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -73,26 +73,15 @@ function onTest()
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
 -->
-            <p>  {{ user.isOnline() }} </p>
 
-            <img src="{{ user.getAvatarThumb(300) }}" class="img-circle img-sm" alt="">
-
-            {% for userAllOnly in user.getAllUsersOnly() %}
-
-               <p>{{ userAllOnly.id }} - {{ userAllOnly.name }}</p>
-
-            {% endfor %}
-
-
+        <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-
                 <div id="upload" class="dropzone2" style="display:none"></div>
-
             {% else %}
-
             {% endif %}
         {% endfor %}
+        <!-- END UPLOADS FILES -->
 
             <!--
                     <form data-request="onTest" data-request-update="accountres: '#result'">
@@ -156,7 +145,7 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:1627:"<div class="conteiner">
+";s:6:"markup";s:1389:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
@@ -168,26 +157,15 @@ function onTest()
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
 -->
-            <p>  {{ user.isOnline() }} </p>
 
-            <img src="{{ user.getAvatarThumb(300) }}" class="img-circle img-sm" alt="">
-
-            {% for userAllOnly in user.getAllUsersOnly() %}
-
-               <p>{{ userAllOnly.id }} - {{ userAllOnly.name }}</p>
-
-            {% endfor %}
-
-
+        <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-
                 <div id="upload" class="dropzone2" style="display:none"></div>
-
             {% else %}
-
             {% endif %}
         {% endfor %}
+        <!-- END UPLOADS FILES -->
 
             <!--
                     <form data-request="onTest" data-request-update="accountres: '#result'">
