@@ -10,6 +10,9 @@ paramCode = "code"
 [session]
 security = "all"
 redirect = "s"
+
+[demoTodo]
+max = 10
 ==
 <?php
 function onInit()
@@ -35,19 +38,19 @@ function onStart()
     #$user = Auth::getUser();
     #echo $user;
 
-$file_array = file("message.txt");
+    $file_array = file("message.txt");
 
-if(!$file_array)
-{
-    echo("Ошибка открытия файла");
-}
-else
-{
-    for($i=0; $i < count($file_array); $i++)
+    if(!$file_array)
     {
-        printf("%s<br>", $file_array[$i]);
+        echo("Ошибка открытия файла");
     }
-}
+    else
+    {
+        for($i=0; $i < count($file_array); $i++)
+        {
+            printf("%s<br>", $file_array[$i]);
+        }
+    }
 
 }
 
@@ -66,6 +69,8 @@ function onTest()
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
+        
+
 
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
@@ -76,6 +81,7 @@ function onTest()
                     <div class="dz-message needsclick">
                         Drop files here or click to upload.<br>
                     </div>
+                    {% component 'demoTodo' %}
 
                 </div>
 

@@ -4,9 +4,10 @@ use Model;
 
 class YandexWebmasterSettings extends Model {
 
-  public $implement = ['System.Behaviors.SettingsModel'];
+    public $implement = ['System.Behaviors.SettingsModel'];
 
-  public $settingsCode = 'xeor_yandex_fields';
+    public $settingsCode = 'xeor_yandex_fields';
 
-  public $settingsFields = 'fields.yaml';
+    public $settingsFields = 'fields.yaml';
+
 }

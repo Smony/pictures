@@ -1,5 +1,5 @@
 <?php 
-class Cms56dd7c8d20125_1744633186Class extends \Cms\Classes\PageCode
+class Cms56dda9c72e662_716867785Class extends \Cms\Classes\PageCode
 {
 public function onInit()
 {
@@ -23,19 +23,19 @@ public function onStart()
     #$user = Auth::getUser();
     #echo $user;
 
-$file_array = file("message.txt");
+    $file_array = file("message.txt");
 
-if(!$file_array)
-{
-    echo("Ошибка открытия файла");
-}
-else
-{
-    for($i=0; $i < count($file_array); $i++)
+    if(!$file_array)
     {
-        printf("%s<br>", $file_array[$i]);
+        echo("Ошибка открытия файла");
     }
-}
+    else
+    {
+        for($i=0; $i < count($file_array); $i++)
+        {
+            printf("%s<br>", $file_array[$i]);
+        }
+    }
 
 }
 public function onTest()

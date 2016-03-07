@@ -15,8 +15,11 @@
                 #$diskSpace = $diskClient->diskSpaceInfo();
                 $path = $user->email;
 
+            #SAVE TO MESSAGE.TXT
+
                 $file = fopen ("message.txt","r+");
-                $str = "12121212";
+                $str = "qqqqqqqqqqqqqqqq";
+
                 if ( !$file )
                 {
                     echo("Ошибка открытия файла");

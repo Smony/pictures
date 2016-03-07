@@ -6,19 +6,19 @@ use Xeor\YandexWebmaster\Models\YandexWebmasterSettings;
 class YandexMetrika extends ComponentBase
 {
 
-  public function componentDetails()
-  {
-    return [
-      'name'        => 'Metrika',
-      'description' => 'Insert your Metrika code inside any page.'
-    ];
-  }
+    public function componentDetails()
+    {
+        return [
+            'name' => 'xeor.yandexwebmaster::lang.yandexmetrika.name',
+            'description' => 'xeor.yandexwebmaster::lang.yandexmetrika.description'
+        ];
+    }
 
-  public function onRender()
-  {
-    // Using settings
-    $settings = YandexWebmasterSettings::instance();
-    $this->page['metrika'] = $settings->metrika;
-  }
+    public function onRender()
+    {
+        // Using settings
+        $settings = YandexWebmasterSettings::instance();
+        $this->page['metrika'] = $settings->metrika;
+    }
 
 }

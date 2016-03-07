@@ -5,19 +5,13 @@ use Backend\Classes\FormField;
 
 class Plugin extends PluginBase
 {
-
-    /**
-     * Returns information about this plugin.
-     *
-     * @return array
-     */
     public function pluginDetails()
     {
         return [
-            'name'        => 'Yandex Webmaster',
-            'description' => 'Insert Yandex Metrika and Webmaster code inside you pages',
-            'author'      => 'Sozonov Alexey',
-            'icon'        => 'icon-area-chart'
+            'name' => 'xeor.yandexwebmaster::lang.plugin.name',
+            'description' => 'xeor.yandexwebmaster::lang.plugin.description',
+            'author' => 'Sozonov Alexey',
+            'icon' => 'icon-area-chart'
         ];
     }
 
@@ -25,8 +19,37 @@ class Plugin extends PluginBase
     {
         return [
             'Xeor\YandexWebmaster\Components\YandexMetrika' => 'metrika',
-            'Xeor\YandexWebmaster\Components\YandexMetrikaInformer' => 'metrikainformer',
             'Xeor\YandexWebmaster\Components\YandexWebmaster' => 'webmaster'
+        ];
+    }
+
+    public function registerReportWidgets()
+    {
+        return [
+            'Xeor\YandexWebmaster\ReportWidgets\TrafficSources' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_traffic_sources',
+                'context' => 'dashboard'
+            ],
+            'Xeor\YandexWebmaster\ReportWidgets\TrafficOverview' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_traffic_overview',
+                'context' => 'dashboard'
+            ],
+            'Xeor\YandexWebmaster\ReportWidgets\SearchPhrases' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_search_phrases',
+                'context' => 'dashboard'
+            ],
+            'Xeor\YandexWebmaster\ReportWidgets\PopularContent' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_popular_content',
+                'context' => 'dashboard'
+            ],
+            'Xeor\YandexWebmaster\ReportWidgets\Geo' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_geo',
+                'context' => 'dashboard'
+            ],
+            'Xeor\YandexWebmaster\ReportWidgets\Gender' => [
+                'label'   => 'xeor.yandexwebmaster::lang.widgets.title_gender',
+                'context' => 'dashboard'
+            ],
         ];
     }
 
@@ -34,12 +57,12 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'Yandex Metrika and Webmaster',
-                'description' => 'Manage Yandex Webmaster Settings.',
-                'category'    => 'Yandex',
-                'icon'        => 'icon-area-chart',
-                'class'       => 'Xeor\YandexWebmaster\Models\YandexWebmasterSettings',
-                'order'       => 9999
+                'label' => 'xeor.yandexwebmaster::lang.settings.menu_label',
+                'description' => 'xeor.yandexwebmaster::lang.settings.menu_description',
+                'category' => 'Yandex',
+                'icon' => 'icon-area-chart',
+                'class' => 'Xeor\YandexWebmaster\Models\YandexWebmasterSettings',
+                'order' => 9999
             ]
         ];
     }

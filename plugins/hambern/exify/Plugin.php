@@ -1,6 +1,6 @@
 <?php namespace Hambern\Exify;
 
-use Hambern\Exify\Models\Exif;
+use Model;
 use PHPExif\Reader\Reader;
 use System\Classes\PluginBase;
 use System\Models\File as FileBase;
@@ -14,25 +14,23 @@ class Plugin extends PluginBase
 	public function boot()
 	{
 		FileBase::extend(function ($model) {
-			$model->hasOne['exif'] = ['Hambern\Exify\Models\Exif', 'delete' => true];
-		});
-
-		FileBase::extend(function ($model) {
-			$model->bindEvent('model.afterCreate', function () use ($model) {
+			$model->addDynamicMethod('exif', function () use ($model) {
 				if (strpos($model->content_type, 'image') !== false) {
+					$exif = new Model();
 					$reader = Reader::factory(Reader::TYPE_NATIVE);
 					$path = 'http://' . $_SERVER['SERVER_NAME'] . $model->path;
-					$data = $reader->read($path)->getData();
-					foreach ($data as $k => $v) {
-						$fill[snake_case($k)] = $v;
+					if ($data = $reader->read($path)->getData()) {
+						foreach ($data as $key => $value) {
+							if (is_object($value)) {
+								foreach ($value as $key => $value) {
+									if (!is_object($value)) {
+										$exif->attributes[snake_case($key)] = $value;
+									}
+								}
+							} else $exif->attributes[snake_case($key)] = $value;
+						}
+						return $exif;
 					}
-					$exif = Exif::make($fill);
-					$model->exif()->save($exif);
-				}
-			});
-			$model->bindEvent('model.beforeDelete', function () use ($model) {
-				if (strpos($model->content_type, 'image') !== false) {
-					$model->exif()->delete();
 				}
 			});
 		});

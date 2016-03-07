@@ -1,3 +1,4 @@
 1.0.1:
-    - Starting up the plugin
-    - create_exifs_table.php
+    - First version of Exify
+1.0.2:
+    - Makes sure the Efix data is iterable
