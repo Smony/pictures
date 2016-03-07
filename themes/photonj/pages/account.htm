@@ -32,24 +32,22 @@ function onInit()
 
 function onStart()
 {
-    $user = Auth::getUser();
+    #$user = Auth::getUser();
+    #echo $user;
 
-    // переменная $userId должна содержать ID текущего пользователя
-    //$userId = '2';
+$file_array = file("message.txt");
 
-    $key = md5('XMVcDXruK1VC4voS' . '2');
-
-    // переменная $userName должна содержать имя текущего пользователя
-    $userName = 'vasya';
-
-    // переменная $userGender должна содержать пол текущего пользователя (m или f)
-    $userGender = 'm';
-
-    // переменная $userAvatar должна содержать путь к файлу с аватаром текущего пользователя
-    $userAvatar = "123123";
-
-    // переменная $userProfile должна содержать путь к странице пользователя текущего пользователя
-    $userProfile = "123123";
+if(!$file_array)
+{
+    echo("Ошибка открытия файла");
+}
+else
+{
+    for($i=0; $i < count($file_array); $i++)
+    {
+        printf("%s<br>", $file_array[$i]);
+    }
+}
 
 }
 
@@ -69,15 +67,18 @@ function onTest()
             {% component 'account' %}
         <hr />
 
-            <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
-                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
-                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
-
-
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-                <div id="upload" class="dropzone2" style="display:none"></div>
+
+                <div id="upload" class="dropzone2" style="display:none">
+
+                    <div class="dz-message needsclick">
+                        Drop files here or click to upload.<br>
+                    </div>
+
+                </div>
+
             {% else %}
             {% endif %}
         {% endfor %}

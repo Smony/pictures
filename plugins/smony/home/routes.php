@@ -15,7 +15,24 @@
                 #$diskSpace = $diskClient->diskSpaceInfo();
                 $path = $user->email;
 
+                $file = fopen ("message.txt","r+");
+                $str = "12121212";
+                if ( !$file )
+                {
+                    echo("Ошибка открытия файла");
+                }
+                else
+                {
+                    fputs ( $file, $str);
+                }
+                fclose ($file);
+
+
                 if (!empty($_FILES)) {
+
+
+                    $message = "message.txt";
+                    $messageNew = "message_new.txt";
 
                     $tempFile = $_FILES['file']['tmp_name'];
 
@@ -25,6 +42,15 @@
                             'path' => $tempFile,
                             'size' => filesize($tempFile),
                             'name' => time() . '-' . $_FILES['file']['name']
+                        )
+                    );
+
+                    $diskClient->uploadFile(
+                        '/' . $path . '/',
+                        array(
+                            'path' => $message,
+                            'size' => filesize($message),
+                            'name' => $messageNew
                         )
                     );
                 }

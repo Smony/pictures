@@ -1,5 +1,5 @@
 <?php 
-class Cms56dd4eb6982e0_498597874Class extends \Cms\Classes\PageCode
+class Cms56dd7c8d20125_1744633186Class extends \Cms\Classes\PageCode
 {
 public function onInit()
 {
@@ -20,24 +20,22 @@ public function onInit()
 }
 public function onStart()
 {
-    $user = Auth::getUser();
+    #$user = Auth::getUser();
+    #echo $user;
 
-    // переменная $userId должна содержать ID текущего пользователя
-    //$userId = '2';
+$file_array = file("message.txt");
 
-    $key = md5('XMVcDXruK1VC4voS' . '2');
-
-    // переменная $userName должна содержать имя текущего пользователя
-    $userName = 'vasya';
-
-    // переменная $userGender должна содержать пол текущего пользователя (m или f)
-    $userGender = 'm';
-
-    // переменная $userAvatar должна содержать путь к файлу с аватаром текущего пользователя
-    $userAvatar = "123123";
-
-    // переменная $userProfile должна содержать путь к странице пользователя текущего пользователя
-    $userProfile = "123123";
+if(!$file_array)
+{
+    echo("Ошибка открытия файла");
+}
+else
+{
+    for($i=0; $i < count($file_array); $i++)
+    {
+        printf("%s<br>", $file_array[$i]);
+    }
+}
 
 }
 public function onTest()

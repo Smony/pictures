@@ -1,4 +1,4 @@
-1457344782s:6187:"a:6:{s:5:"mtime";i:1457343458;s:7:"content";s:2984:"title = "Account"
+1457358087s:4594:"a:6:{s:5:"mtime";i:1457355915;s:7:"content";s:2188:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -32,24 +32,22 @@ function onInit()
 
 function onStart()
 {
-    $user = Auth::getUser();
+    #$user = Auth::getUser();
+    #echo $user;
 
-    // переменная $userId должна содержать ID текущего пользователя
-    //$userId = '2';
+$file_array = file("message.txt");
 
-    $key = md5('XMVcDXruK1VC4voS' . '2');
-
-    // переменная $userName должна содержать имя текущего пользователя
-    $userName = 'vasya';
-
-    // переменная $userGender должна содержать пол текущего пользователя (m или f)
-    $userGender = 'm';
-
-    // переменная $userAvatar должна содержать путь к файлу с аватаром текущего пользователя
-    $userAvatar = "123123";
-
-    // переменная $userProfile должна содержать путь к странице пользователя текущего пользователя
-    $userProfile = "123123";
+if(!$file_array)
+{
+    echo("Ошибка открытия файла");
+}
+else
+{
+    for($i=0; $i < count($file_array); $i++)
+    {
+        printf("%s<br>", $file_array[$i]);
+    }
+}
 
 }
 
@@ -69,15 +67,18 @@ function onTest()
             {% component 'account' %}
         <hr />
 
-            <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
-                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
-                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
-
-
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-                <div id="upload" class="dropzone2" style="display:none"></div>
+
+                <div id="upload" class="dropzone2" style="display:none">
+
+                    <div class="dz-message needsclick">
+                        Drop files here or click to upload.<br>
+                    </div>
+
+                </div>
+
             {% else %}
             {% endif %}
         {% endfor %}
@@ -97,7 +98,7 @@ function onTest()
         </div>
         <div class="col-lg-1"></div>
     </div>
-</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:2:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}}}s:4:"code";s:1413:"
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:2:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}}}s:4:"code";s:784:"
 function onInit()
 {
     //$this->imageUploader->bindModel('files', Project::find(1));
@@ -118,24 +119,22 @@ function onInit()
 
 function onStart()
 {
-    $user = Auth::getUser();
+    #$user = Auth::getUser();
+    #echo $user;
 
-    // переменная $userId должна содержать ID текущего пользователя
-    //$userId = '2';
+$file_array = file("message.txt");
 
-    $key = md5('XMVcDXruK1VC4voS' . '2');
-
-    // переменная $userName должна содержать имя текущего пользователя
-    $userName = 'vasya';
-
-    // переменная $userGender должна содержать пол текущего пользователя (m или f)
-    $userGender = 'm';
-
-    // переменная $userAvatar должна содержать путь к файлу с аватаром текущего пользователя
-    $userAvatar = "123123";
-
-    // переменная $userProfile должна содержать путь к странице пользователя текущего пользователя
-    $userProfile = "123123";
+if(!$file_array)
+{
+    echo("Ошибка открытия файла");
+}
+else
+{
+    for($i=0; $i < count($file_array); $i++)
+    {
+        printf("%s<br>", $file_array[$i]);
+    }
+}
 
 }
 
@@ -145,7 +144,7 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:1382:"<div class="conteiner">
+";s:6:"markup";s:1215:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
@@ -153,15 +152,18 @@ function onTest()
             {% component 'account' %}
         <hr />
 
-            <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
-                &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
-                &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
-
-
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
             {% if role.code == 'clients' %}
-                <div id="upload" class="dropzone2" style="display:none"></div>
+
+                <div id="upload" class="dropzone2" style="display:none">
+
+                    <div class="dz-message needsclick">
+                        Drop files here or click to upload.<br>
+                    </div>
+
+                </div>
+
             {% else %}
             {% endif %}
         {% endfor %}

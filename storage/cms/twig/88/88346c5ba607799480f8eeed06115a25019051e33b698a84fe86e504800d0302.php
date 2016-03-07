@@ -29,34 +29,37 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         // line 7
         echo "        <hr />
 
-            <iframe width=\"100%\" height=\"450\" frameborder=\"0\" scrolling=\"no\" src=\"http://chatfocus.com/client.php?chat=6174&ext_id=<?=\$userId?>&ext_key=<?=\$key?>
-                &ext_name=<?=\$userName?>&ext_sex=<?=\$userGender?>
-                &ext_avatar=<?=urlencode(\$userAvatar)?>&ext_profile=<?=urlencode(\$userProfile)?>\"></iframe>
-
-
         <!-- UPLOADS FILES -->
         ";
-        // line 15
+        // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array(), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["role"]) {
-            // line 16
+            // line 11
             echo "            ";
             if (($this->getAttribute($context["role"], "code", array()) == "clients")) {
-                // line 17
-                echo "                <div id=\"upload\" class=\"dropzone2\" style=\"display:none\"></div>
+                // line 12
+                echo "
+                <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">
+
+                    <div class=\"dz-message needsclick\">
+                        Drop files here or click to upload.<br>
+                    </div>
+
+                </div>
+
             ";
             } else {
-                // line 19
+                // line 22
                 echo "            ";
             }
-            // line 20
+            // line 23
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['role'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
+        // line 24
         echo "        <!-- END UPLOADS FILES -->
 
             <!--
@@ -67,11 +70,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
                     </form>
                     <div id=\"#result\">
                         ";
-        // line 30
+        // line 33
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 31
+        // line 34
         echo "                    </div>
             -->
 
@@ -93,7 +96,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  75 => 31,  71 => 30,  60 => 21,  54 => 20,  51 => 19,  47 => 17,  44 => 16,  40 => 15,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  78 => 34,  74 => 33,  63 => 24,  57 => 23,  54 => 22,  42 => 12,  39 => 11,  35 => 10,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -104,15 +107,18 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*             {% component 'account' %}*/
 /*         <hr />*/
 /* */
-/*             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>*/
-/*                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>*/
-/*                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>*/
-/* */
-/* */
 /*         <!-- UPLOADS FILES -->*/
 /*         {% for role in user.groups() %}*/
 /*             {% if role.code == 'clients' %}*/
-/*                 <div id="upload" class="dropzone2" style="display:none"></div>*/
+/* */
+/*                 <div id="upload" class="dropzone2" style="display:none">*/
+/* */
+/*                     <div class="dz-message needsclick">*/
+/*                         Drop files here or click to upload.<br>*/
+/*                     </div>*/
+/* */
+/*                 </div>*/
+/* */
 /*             {% else %}*/
 /*             {% endif %}*/
 /*         {% endfor %}*/
