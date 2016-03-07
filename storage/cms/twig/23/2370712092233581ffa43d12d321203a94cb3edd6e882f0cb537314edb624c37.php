@@ -315,7 +315,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                     <div class=\"dropdown-content-footer\">
                         <a href=\"";
                 // line 225
-                echo $this->env->getExtension('CMS')->pageFilter("works");
+                echo $this->env->getExtension('CMS')->pageFilter("account/users");
                 echo "\" data-popup=\"tooltip\" title=\"All users\"><i class=\"icon-menu display-block\"></i></a>
                     </div>
                 </div>
@@ -926,7 +926,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*                     </ul>*/
 /* */
 /*                     <div class="dropdown-content-footer">*/
-/*                         <a href="{{ 'works'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>*/
+/*                         <a href="{{ 'account/users'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>*/
 /*                     </div>*/
 /*                 </div>*/
 /*             </li>*/

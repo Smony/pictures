@@ -68,11 +68,11 @@ function onTest()
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
-<!--
+
             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
--->
+
 
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}

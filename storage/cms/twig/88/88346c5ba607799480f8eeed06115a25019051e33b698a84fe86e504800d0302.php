@@ -28,11 +28,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         unset($context['__cms_component_params']);
         // line 7
         echo "        <hr />
-<!--
+
             <iframe width=\"100%\" height=\"450\" frameborder=\"0\" scrolling=\"no\" src=\"http://chatfocus.com/client.php?chat=6174&ext_id=<?=\$userId?>&ext_key=<?=\$key?>
                 &ext_name=<?=\$userName?>&ext_sex=<?=\$userGender?>
                 &ext_avatar=<?=urlencode(\$userAvatar)?>&ext_profile=<?=urlencode(\$userProfile)?>\"></iframe>
--->
+
 
         <!-- UPLOADS FILES -->
         ";
@@ -103,11 +103,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*         <div class="col-lg-10 ">*/
 /*             {% component 'account' %}*/
 /*         <hr />*/
-/* <!--*/
+/* */
 /*             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>*/
 /*                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>*/
 /*                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>*/
-/* -->*/
+/* */
 /* */
 /*         <!-- UPLOADS FILES -->*/
 /*         {% for role in user.groups() %}*/

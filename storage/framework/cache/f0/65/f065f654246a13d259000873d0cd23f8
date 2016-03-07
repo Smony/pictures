@@ -1,4 +1,4 @@
-1457110909s:45095:"a:6:{s:5:"mtime";i:1457110298;s:7:"content";s:22467:"description = "Admin layout"
+1457344782s:45111:"a:6:{s:5:"mtime";i:1457111999;s:7:"content";s:22475:"description = "Admin layout"
 
 ==
 <!DOCTYPE html>
@@ -225,7 +225,7 @@
                     </ul>
 
                     <div class="dropdown-content-footer">
-                        <a href="{{ 'works'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
+                        <a href="{{ 'account/users'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
                     </div>
                 </div>
             </li>
@@ -500,7 +500,7 @@
 <!-- /page container -->
 
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:12:"Admin layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:22431:"<!DOCTYPE html>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:12:"Admin layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:22439:"<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -724,7 +724,7 @@
                     </ul>
 
                     <div class="dropdown-content-footer">
-                        <a href="{{ 'works'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
+                        <a href="{{ 'account/users'|page }}" data-popup="tooltip" title="All users"><i class="icon-menu display-block"></i></a>
                     </div>
                 </div>
             </li>

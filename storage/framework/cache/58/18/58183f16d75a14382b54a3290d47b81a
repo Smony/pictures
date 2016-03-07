@@ -1,4 +1,4 @@
-1457111123s:6201:"a:6:{s:5:"mtime";i:1457109092;s:7:"content";s:2991:"title = "Account"
+1457344782s:6187:"a:6:{s:5:"mtime";i:1457343458;s:7:"content";s:2984:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -68,11 +68,11 @@ function onTest()
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
-<!--
+
             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
--->
+
 
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
@@ -145,18 +145,18 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:1389:"<div class="conteiner">
+";s:6:"markup";s:1382:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
         <div class="col-lg-10 ">
             {% component 'account' %}
         <hr />
-<!--
+
             <iframe width="100%" height="450" frameborder="0" scrolling="no" src="http://chatfocus.com/client.php?chat=6174&ext_id=<?=$userId?>&ext_key=<?=$key?>
                 &ext_name=<?=$userName?>&ext_sex=<?=$userGender?>
                 &ext_avatar=<?=urlencode($userAvatar)?>&ext_profile=<?=urlencode($userProfile)?>"></iframe>
--->
+
 
         <!-- UPLOADS FILES -->
         {% for role in user.groups() %}
