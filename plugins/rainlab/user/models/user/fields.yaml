@@ -45,6 +45,17 @@ tabs:
             tab: rainlab.user::lang.user.account
             type: relation
             emptyOption: rainlab.user::lang.user.empty_groups
+        a_plan:
+            label: SELECT A PLAN BELOW
+            tab: PLAN
+            type: dropdown
+            options:
+                    1: FREE
+                    2: BASIC
+                    3: IMAGE
+                    4: CUSTOM
+            #type: relation
+            #emptyOption: rainlab.user::lang.user.empty_groups
 
 secondaryTabs:
     fields:

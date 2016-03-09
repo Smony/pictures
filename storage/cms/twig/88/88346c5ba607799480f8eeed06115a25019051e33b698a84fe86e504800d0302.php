@@ -28,19 +28,17 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
         unset($context['__cms_component_params']);
         // line 7
         echo "        <hr />
-        
-
 
         <!-- UPLOADS FILES -->
         ";
-        // line 12
+        // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["user"]) ? $context["user"] : null), "groups", array(), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["role"]) {
-            // line 13
+            // line 11
             echo "            ";
             if (($this->getAttribute($context["role"], "code", array()) == "clients")) {
-                // line 14
+                // line 12
                 echo "
                 <div id=\"upload\" class=\"dropzone2\" style=\"display:none\">
 
@@ -48,26 +46,26 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
                         Drop files here or click to upload.<br>
                     </div>
                     ";
-                // line 20
+                // line 18
                 $context['__cms_component_params'] = [];
                 echo $this->env->getExtension('CMS')->componentFunction("demoTodo"                , $context['__cms_component_params']                );
                 unset($context['__cms_component_params']);
-                // line 21
+                // line 19
                 echo "
                 </div>
 
             ";
             } else {
-                // line 25
+                // line 23
                 echo "            ";
             }
-            // line 26
+            // line 24
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['role'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 27
+        // line 25
         echo "        <!-- END UPLOADS FILES -->
 
             <!--
@@ -78,11 +76,11 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
                     </form>
                     <div id=\"#result\">
                         ";
-        // line 36
+        // line 34
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("accountres"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 37
+        // line 35
         echo "                    </div>
             -->
 
@@ -104,7 +102,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  86 => 37,  82 => 36,  71 => 27,  65 => 26,  62 => 25,  56 => 21,  52 => 20,  44 => 14,  41 => 13,  37 => 12,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  84 => 35,  80 => 34,  69 => 25,  63 => 24,  60 => 23,  54 => 19,  50 => 18,  42 => 12,  39 => 11,  35 => 10,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -114,8 +112,6 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*         <div class="col-lg-10 ">*/
 /*             {% component 'account' %}*/
 /*         <hr />*/
-/*         */
-/* */
 /* */
 /*         <!-- UPLOADS FILES -->*/
 /*         {% for role in user.groups() %}*/
