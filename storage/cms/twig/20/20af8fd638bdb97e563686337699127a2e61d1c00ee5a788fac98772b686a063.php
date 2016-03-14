@@ -71,17 +71,30 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
             </div>
         </div>
 
+        <div class=\"content-divider text-muted form-group\"><span>hidden</span></div>
+
+        <div class=\"form-group has-feedback has-feedback-left\">
+            <input name=\"a_plan\"
+                   type=\"number\"
+                   class=\"form-control\"
+                   id=\"registerA_plan\"
+                   placeholder=\"plan\" />
+            <div class=\"form-control-feedback\">
+                <i class=\"icon-user-lock text-muted\"></i>
+            </div>
+        </div>
+
         <div class=\"form-group\">
             <button type=\"submit\" class=\"btn bg-blue btn-block\">Register <i class=\"icon-circle-right2 position-right\"></i></button>
             <button type=\"button\" class=\"btn btn-default btn-block\" data-dismiss=\"modal\">Cancel</button>
         </div>
 
         ";
-        // line 61
+        // line 74
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::termsConditions_cookiePolicy")        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 62
+        // line 75
         echo "    </div>
 
     <!--
@@ -138,7 +151,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 
     public function getDebugInfo()
     {
-        return array (  85 => 62,  81 => 61,  19 => 1,);
+        return array (  98 => 75,  94 => 74,  19 => 1,);
     }
 }
 /* <!-- Registration form -->*/
@@ -191,6 +204,19 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 /*                    class="form-control"*/
 /*                    id="registerPassword"*/
 /*                    placeholder="Choose a password" />*/
+/*             <div class="form-control-feedback">*/
+/*                 <i class="icon-user-lock text-muted"></i>*/
+/*             </div>*/
+/*         </div>*/
+/* */
+/*         <div class="content-divider text-muted form-group"><span>hidden</span></div>*/
+/* */
+/*         <div class="form-group has-feedback has-feedback-left">*/
+/*             <input name="a_plan"*/
+/*                    type="number"*/
+/*                    class="form-control"*/
+/*                    id="registerA_plan"*/
+/*                    placeholder="plan" />*/
 /*             <div class="form-control-feedback">*/
 /*                 <i class="icon-user-lock text-muted"></i>*/
 /*             </div>*/

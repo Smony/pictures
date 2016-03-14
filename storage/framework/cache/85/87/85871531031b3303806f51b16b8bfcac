@@ -1,4 +1,4 @@
-1457969221s:3675:"a:2:{s:5:"mtime";i:1457968617;s:7:"content";s:3620:"<!-- Registration form -->
+1457977119s:4165:"a:2:{s:5:"mtime";i:1457975123;s:7:"content";s:4110:"<!-- Registration form -->
 <div id="modal-registration" class="modal fade">
     <div class="modal-dialog" style="width: 17%;">
         <div class="modal-content login-form">
@@ -48,6 +48,19 @@
                    class="form-control"
                    id="registerPassword"
                    placeholder="Choose a password" />
+            <div class="form-control-feedback">
+                <i class="icon-user-lock text-muted"></i>
+            </div>
+        </div>
+
+        <div class="content-divider text-muted form-group"><span>hidden</span></div>
+
+        <div class="form-group has-feedback has-feedback-left">
+            <input name="a_plan"
+                   type="number"
+                   class="form-control"
+                   id="registerA_plan"
+                   placeholder="plan" />
             <div class="form-control-feedback">
                 <i class="icon-user-lock text-muted"></i>
             </div>

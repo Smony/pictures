@@ -94,25 +94,29 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
         // line 60
         echo $this->env->getExtension('CMS')->pageFunction();
         // line 61
-        echo "    ";
+        echo "
+    ";
+        // line 62
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("account"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 62
-        echo "    ";
+        // line 63
+        echo "
+    ";
+        // line 64
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("formSubscribe"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 63
+        // line 65
         echo "
     <div class=\"row footer\" style=\"margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;\">
 
     ";
-        // line 66
+        // line 68
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 67
+        // line 69
         echo "
     </div>
 
@@ -126,28 +130,28 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 </div>
     <!-- Scripts -->
     <script src=\"";
-        // line 79
+        // line 81
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/js/jquery.js", 1 => "assets/js/bootstrap.min.js"));
-        // line 82
+        // line 84
         echo "\"></script>
 
     ";
-        // line 84
+        // line 86
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css" rel="stylesheet">'.PHP_EOL;
-        // line 85
+        // line 87
         echo "    ";
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 86
+        // line 88
         echo "    ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 87
+        // line 89
         echo "
 </body>
 </html>";
@@ -165,7 +169,7 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 
     public function getDebugInfo()
     {
-        return array (  151 => 87,  147 => 86,  143 => 85,  136 => 84,  132 => 82,  130 => 79,  116 => 67,  112 => 66,  107 => 63,  102 => 62,  97 => 61,  95 => 60,  88 => 55,  84 => 54,  76 => 49,  53 => 28,  50 => 16,  47 => 15,  43 => 14,  37 => 11,  33 => 10,  28 => 8,  19 => 1,);
+        return array (  155 => 89,  151 => 88,  147 => 87,  140 => 86,  136 => 84,  134 => 81,  120 => 69,  116 => 68,  111 => 65,  107 => 64,  104 => 63,  100 => 62,  97 => 61,  95 => 60,  88 => 55,  84 => 54,  76 => 49,  53 => 28,  50 => 16,  47 => 15,  43 => 14,  37 => 11,  33 => 10,  28 => 8,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -228,7 +232,9 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 /* */
 /* */
 /*     {% page %}*/
+/* */
 /*     {% component 'account' %}*/
+/* */
 /*     {% component 'formSubscribe' %}*/
 /* */
 /*     <div class="row footer" style="margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;">*/

@@ -1,4 +1,6 @@
-1457968570s:3155:"a:2:{s:5:"mtime";i:1456908979;s:7:"content";s:3100:"{{ form_ajax('onUpdate', { model: user }) }}
+1457975756s:3219:"a:2:{s:5:"mtime";i:1457974465;s:7:"content";s:3164:"<div id="accountUpdateForm" style="display: none">
+
+{{ form_ajax('onUpdate', { model: user }) }}
 
     <!--
         <div class="form-group">
@@ -76,4 +78,6 @@
 
     <button type="submit" class="btn btn-default">Save</button>
 
-{{ form_close() }}";}";
+{{ form_close() }}
+
+</div>";}";

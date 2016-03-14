@@ -541,14 +541,13 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                     </li>
 
                     <li class=\"disabled\"><a href=\"scripts:void();\"><i class=\"glyphicon glyphicon-comment\"></i> <span>Messages <span class=\"label bg-blue-400\">1</span></span></a></li>
-
-                        <li>
-                            <a
-                                    href=\"javascript:;\"
-                                    onclick=\"\$('#upload').toggle()\"><i class=\"glyphicon glyphicon glyphicon-download-alt\"></i>
-                                <span>Upload file</span>
-                            </a>
-                        </li>
+                    <li>
+                        <a
+                                href=\"javascript:;\"
+                                onclick=\"\$('#accountUpdateForm').toggle()\"><i class=\"glyphicon glyphicon-circle-arrow-down\"></i>
+                            <span>Update account</span>
+                        </a>
+                    </li>
 
                     <li>
                         <a
@@ -558,6 +557,13 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                         </a>
                     </li>
 
+                    <li>
+                        <a
+                                href=\"javascript:;\"
+                                onclick=\"\$('#upload').toggle()\"><i class=\"glyphicon glyphicon glyphicon-download-alt\"></i>
+                            <span>Upload file</span>
+                        </a>
+                    </li>
 
 
                     <!-- /main -->
@@ -573,11 +579,11 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 <!-- /main sidebar -->
 ";
         } else {
-            // line 407
+            // line 413
             echo "
 ";
         }
-        // line 409
+        // line 415
         echo "
 
         <!-- Main content -->
@@ -586,12 +592,12 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
             <!-- Page header -->
             <div class=\"page-header\">
                 ";
-        // line 416
+        // line 422
         if ( !(isset($context["user"]) ? $context["user"] : null)) {
-            // line 417
+            // line 423
             echo "                ";
         } else {
-            // line 418
+            // line 424
             echo "                <div class=\"page-header-content\">
                     <div class=\"page-title\">
                         <h4><i class=\"icon-arrow-left52 position-left\"></i> <span class=\"text-semibold\">Home</span> - Account</h4>
@@ -608,11 +614,11 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                 </div>
                 ";
         }
-        // line 433
+        // line 439
         echo "                <div class=\"breadcrumb-line\">
                     <ul class=\"breadcrumb\">
                         <li><a href=\"";
-        // line 435
+        // line 441
         echo "/";
         echo "\"><i class=\"icon-home2 position-left\"></i> Home</a></li>
                         <li class=\"active\">Account</li>
@@ -655,7 +661,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
                         <div class=\"form-horizontal\">
 
                             ";
-        // line 475
+        // line 481
         echo $this->env->getExtension('CMS')->pageFunction();
         echo "                                  <!-- INCLUDE TEMPLATE PAGE -->
 
@@ -675,28 +681,28 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 
         <!-- Scripts -->
         <script src=\"";
-        // line 492
+        // line 498
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/js/jquery.js", 1 => "assets/js/bootstrap.min.js"));
-        // line 495
+        // line 501
         echo "\"></script>
 
         ";
-        // line 497
+        // line 503
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css" rel="stylesheet">'.PHP_EOL;
-        // line 498
+        // line 504
         echo "        ";
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 499
+        // line 505
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 500
+        // line 506
         echo "
 
     </div>
@@ -721,7 +727,7 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 
     public function getDebugInfo()
     {
-        return array (  700 => 500,  696 => 499,  692 => 498,  685 => 497,  681 => 495,  679 => 492,  659 => 475,  616 => 435,  612 => 433,  595 => 418,  592 => 417,  590 => 416,  581 => 409,  577 => 407,  532 => 365,  505 => 341,  500 => 339,  495 => 337,  485 => 329,  483 => 328,  473 => 320,  464 => 313,  455 => 307,  450 => 304,  445 => 301,  441 => 299,  439 => 298,  429 => 291,  425 => 290,  421 => 288,  419 => 287,  416 => 286,  404 => 276,  391 => 269,  385 => 268,  376 => 262,  372 => 260,  368 => 259,  340 => 234,  332 => 228,  324 => 225,  320 => 223,  316 => 221,  314 => 220,  309 => 218,  303 => 217,  298 => 215,  294 => 213,  290 => 212,  270 => 194,  268 => 193,  261 => 189,  257 => 188,  253 => 187,  249 => 186,  245 => 185,  241 => 183,  233 => 178,  230 => 177,  228 => 176,  222 => 172,  218 => 170,  216 => 169,  213 => 168,  211 => 167,  208 => 166,  206 => 165,  203 => 164,  200 => 163,  196 => 161,  192 => 159,  190 => 158,  92 => 65,  87 => 62,  84 => 60,  77 => 55,  75 => 47,  69 => 43,  67 => 34,  62 => 31,  60 => 28,  54 => 24,  52 => 16,  49 => 15,  46 => 14,  42 => 13,  36 => 10,  32 => 9,  27 => 7,  19 => 1,);
+        return array (  706 => 506,  702 => 505,  698 => 504,  691 => 503,  687 => 501,  685 => 498,  665 => 481,  622 => 441,  618 => 439,  601 => 424,  598 => 423,  596 => 422,  587 => 415,  583 => 413,  532 => 365,  505 => 341,  500 => 339,  495 => 337,  485 => 329,  483 => 328,  473 => 320,  464 => 313,  455 => 307,  450 => 304,  445 => 301,  441 => 299,  439 => 298,  429 => 291,  425 => 290,  421 => 288,  419 => 287,  416 => 286,  404 => 276,  391 => 269,  385 => 268,  376 => 262,  372 => 260,  368 => 259,  340 => 234,  332 => 228,  324 => 225,  320 => 223,  316 => 221,  314 => 220,  309 => 218,  303 => 217,  298 => 215,  294 => 213,  290 => 212,  270 => 194,  268 => 193,  261 => 189,  257 => 188,  253 => 187,  249 => 186,  245 => 185,  241 => 183,  233 => 178,  230 => 177,  228 => 176,  222 => 172,  218 => 170,  216 => 169,  213 => 168,  211 => 167,  208 => 166,  206 => 165,  203 => 164,  200 => 163,  196 => 161,  192 => 159,  190 => 158,  92 => 65,  87 => 62,  84 => 60,  77 => 55,  75 => 47,  69 => 43,  67 => 34,  62 => 31,  60 => 28,  54 => 24,  52 => 16,  49 => 15,  46 => 14,  42 => 13,  36 => 10,  32 => 9,  27 => 7,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -1099,14 +1105,13 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*                     </li>*/
 /* */
 /*                     <li class="disabled"><a href="scripts:void();"><i class="glyphicon glyphicon-comment"></i> <span>Messages <span class="label bg-blue-400">1</span></span></a></li>*/
-/* */
-/*                         <li>*/
-/*                             <a*/
-/*                                     href="javascript:;"*/
-/*                                     onclick="$('#upload').toggle()"><i class="glyphicon glyphicon glyphicon-download-alt"></i>*/
-/*                                 <span>Upload file</span>*/
-/*                             </a>*/
-/*                         </li>*/
+/*                     <li>*/
+/*                         <a*/
+/*                                 href="javascript:;"*/
+/*                                 onclick="$('#accountUpdateForm').toggle()"><i class="glyphicon glyphicon-circle-arrow-down"></i>*/
+/*                             <span>Update account</span>*/
+/*                         </a>*/
+/*                     </li>*/
 /* */
 /*                     <li>*/
 /*                         <a*/
@@ -1116,6 +1121,13 @@ class __TwigTemplate_84749b0d692ff8c477cd489cd8db461c952e9335d3d1d5d43e4e3f95e93
 /*                         </a>*/
 /*                     </li>*/
 /* */
+/*                     <li>*/
+/*                         <a*/
+/*                                 href="javascript:;"*/
+/*                                 onclick="$('#upload').toggle()"><i class="glyphicon glyphicon glyphicon-download-alt"></i>*/
+/*                             <span>Upload file</span>*/
+/*                         </a>*/
+/*                     </li>*/
 /* */
 /* */
 /*                     <!-- /main -->*/

@@ -16,6 +16,10 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+        echo "<div id=\"accountUpdateForm\" style=\"display: none\">
+
+";
+        // line 3
         echo call_user_func_array($this->env->getFunction('form_ajax')->getCallable(), array("ajax", "onUpdate", array("model" => (isset($context["user"]) ? $context["user"] : null))));
         echo "
 
@@ -23,7 +27,7 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
         <div class=\"form-group\">
             <label for=\"accountName\">Full Name</label>
             <input name=\"name\" type=\"text\" class=\"form-control\" id=\"accountName\" value=\"";
-        // line 6
+        // line 8
         echo call_user_func_array($this->env->getFunction('form_value')->getCallable(), array("value", "name"));
         echo "\">
         </div>
@@ -31,7 +35,7 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
         <div class=\"form-group\">
             <label for=\"accountEmail\">Email</label>
             <input name=\"email\" type=\"email\" class=\"form-control\" id=\"accountEmail\" value=\"";
-        // line 11
+        // line 13
         echo call_user_func_array($this->env->getFunction('form_value')->getCallable(), array("value", "email"));
         echo "\">
         </div>
@@ -56,7 +60,7 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
                 <div class=\"input-group\">
                     <span class=\"input-group-addon\"><i class=\"icon-user\"></i></span>
                     <input name=\"name\" type=\"text\" class=\"form-control\" id=\"accountName\" value=\"";
-        // line 33
+        // line 35
         echo call_user_func_array($this->env->getFunction('form_value')->getCallable(), array("value", "name"));
         echo "\">
                 </div>
@@ -70,7 +74,7 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
                 <div class=\"input-group\">
                     <span class=\"input-group-addon\">@</span>
                     <input name=\"email\" type=\"email\" class=\"form-control\" id=\"accountEmail\" value=\"";
-        // line 44
+        // line 46
         echo call_user_func_array($this->env->getFunction('form_value')->getCallable(), array("value", "email"));
         echo "\">
                 </div>
@@ -108,8 +112,11 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
     <button type=\"submit\" class=\"btn btn-default\">Save</button>
 
 ";
-        // line 79
+        // line 81
         echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), array("close"));
+        echo "
+
+</div>";
     }
 
     public function getTemplateName()
@@ -124,9 +131,11 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
 
     public function getDebugInfo()
     {
-        return array (  112 => 79,  74 => 44,  60 => 33,  35 => 11,  27 => 6,  19 => 1,);
+        return array (  116 => 81,  78 => 46,  64 => 35,  39 => 13,  31 => 8,  23 => 3,  19 => 1,);
     }
 }
+/* <div id="accountUpdateForm" style="display: none">*/
+/* */
 /* {{ form_ajax('onUpdate', { model: user }) }}*/
 /* */
 /*     <!--*/
@@ -206,3 +215,5 @@ class __TwigTemplate_387e36cf67d2f8a40378c5766c25a50d9a3fc349d78f8150d397c5b2119
 /*     <button type="submit" class="btn btn-default">Save</button>*/
 /* */
 /* {{ form_close() }}*/
+/* */
+/* </div>*/
