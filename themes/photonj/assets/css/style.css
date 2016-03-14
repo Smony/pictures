@@ -764,3 +764,94 @@ hr {
 body{
     overflow-x: hidden;
 }
+
+
+/*------------------ MODAL SING IN AND REGISTRATION ------------------*/
+
+.icon-object {
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px;
+    display: inline-block;
+}
+
+.icon-object > i {
+    font-size: 32px;
+    top: 0;
+}
+
+.modal-footer.text-center {
+    text-align: center;
+}
+
+/* Form helpers
+----------------------------------*/
+.has-feedback .form-control {
+    padding-right: 36px;
+}
+.has-feedback .form-control.input-xlg {
+    padding-right: 42px;
+}
+.has-feedback .form-control.input-lg {
+    padding-right: 40px;
+}
+.has-feedback .form-control.input-sm {
+    padding-right: 34px;
+}
+.has-feedback .form-control.input-xs {
+    padding-right: 32px;
+}
+.form-control-feedback {
+    width: 38px;
+    color: #333333;
+}
+input[class*=bg-] + .form-control-feedback {
+    color: #fff;
+}
+.has-feedback-left .form-control {
+    padding-right: 12px;
+    padding-left: 36px;
+}
+.has-feedback-left .form-control.input-xlg {
+    padding-right: 10px;
+    padding-left: 42px;
+}
+.has-feedback-left .form-control.input-lg {
+    padding-right: 15px;
+    padding-left: 40px;
+}
+.has-feedback-left .form-control.input-sm {
+    padding-right: 11px;
+    padding-left: 34px;
+}
+.has-feedback-left .form-control.input-xs {
+    padding-right: 10px;
+    padding-left: 32px;
+}
+.has-feedback-left .form-control-feedback {
+    right: auto;
+    left: 0;
+}
+
+
+.form-horizontal .has-feedback > .form-control-feedback {
+    right: 0;
+}
+.form-horizontal .has-feedback-left .form-control-feedback {
+    right: auto;
+    left: 10px;
+}
+.form-horizontal .has-feedback-left > .form-control-feedback {
+    left: 0;
+}
+
+
+.help-block {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

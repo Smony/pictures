@@ -1,4 +1,4 @@
-1457965703s:7162:"a:6:{s:5:"mtime";i:1457961607;s:7:"content";s:3448:"description = "Default layout"
+1457969168s:7370:"a:6:{s:5:"mtime";i:1457967733;s:7:"content";s:3552:"description = "Default layout"
 
 [formSubscribe]
 urlToUnsubscribe = "unsubscribe"
@@ -39,7 +39,10 @@ paramCode = "code"
             'assets/css/slider.css',
             'assets/css/custom.css',
             'assets/css/slider.css',
-            'assets/404/css/404.css'
+            'assets/404/css/404.css',
+            'assets/admin/css/icons/icomoon/styles.css',
+            'assets/admin/css/colors.css'
+
         ]|theme }}" rel="stylesheet">
 
 
@@ -101,7 +104,7 @@ paramCode = "code"
     {% scripts %}
 
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:3:{s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Email already exists!";}s:8:"feedback";a:3:{s:11:"channelCode";s:7:"default";s:14:"successMessage";s:9:"Success;)";s:10:"redirectTo";s:1:"0";}s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}}}s:4:"code";N;s:6:"markup";s:3084:"<!DOCTYPE html>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:3:{s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Email already exists!";}s:8:"feedback";a:3:{s:11:"channelCode";s:7:"default";s:14:"successMessage";s:9:"Success;)";s:10:"redirectTo";s:1:"0";}s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}}}s:4:"code";N;s:6:"markup";s:3188:"<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -124,7 +127,10 @@ paramCode = "code"
             'assets/css/slider.css',
             'assets/css/custom.css',
             'assets/css/slider.css',
-            'assets/404/css/404.css'
+            'assets/404/css/404.css',
+            'assets/admin/css/icons/icomoon/styles.css',
+            'assets/admin/css/colors.css'
+
         ]|theme }}" rel="stylesheet">
 
 

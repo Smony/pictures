@@ -18,7 +18,7 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
         // line 1
         echo "<!-- Login form -->
 <div id=\"modal-login\" class=\"modal fade\">
-    <div class=\"modal-dialog\">
+    <div class=\"modal-dialog\" style=\"width: 17%;\">
         <div class=\"modal-content login-form\">
 <form
         data-request=\"onSignin\">
@@ -76,7 +76,10 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
 
         <div class=\"form-group\">
             <button type=\"submit\" class=\"btn btn-primary btn-block\">Sign in <i class=\"icon-circle-right2 position-right\"></i></button>
+            <button type=\"button\" class=\"btn btn-default btn-block\" data-dismiss=\"modal\">Cancel</button>
         </div>
+
+
 
         <!--
             <div class=\"text-center\">
@@ -89,7 +92,6 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
     <!--<button type=\"submit\" class=\"btn btn-default\">Sign in</button>-->
 </form>
 
-                <span class=\"help-block text-center no-margin\">By continuing, you're confirming that you've read our <a href=\"#\">Terms &amp; Conditions</a> and <a href=\"#\">Cookie Policy</a></span>
 
 
         </div>
@@ -118,7 +120,7 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
 }
 /* <!-- Login form -->*/
 /* <div id="modal-login" class="modal fade">*/
-/*     <div class="modal-dialog">*/
+/*     <div class="modal-dialog" style="width: 17%;">*/
 /*         <div class="modal-content login-form">*/
 /* <form*/
 /*         data-request="onSignin">*/
@@ -167,7 +169,10 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
 /* */
 /*         <div class="form-group">*/
 /*             <button type="submit" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 position-right"></i></button>*/
+/*             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>*/
 /*         </div>*/
+/* */
+/* */
 /* */
 /*         <!--*/
 /*             <div class="text-center">*/
@@ -180,7 +185,6 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
 /*     <!--<button type="submit" class="btn btn-default">Sign in</button>-->*/
 /* </form>*/
 /* */
-/*                 <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>*/
 /* */
 /* */
 /*         </div>*/

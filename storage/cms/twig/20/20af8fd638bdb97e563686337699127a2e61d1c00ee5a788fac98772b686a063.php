@@ -18,7 +18,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
         // line 1
         echo "<!-- Registration form -->
 <div id=\"modal-registration\" class=\"modal fade\">
-    <div class=\"modal-dialog\">
+    <div class=\"modal-dialog\" style=\"width: 17%;\">
         <div class=\"modal-content login-form\">
 
 <form
@@ -76,8 +76,13 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
             <button type=\"button\" class=\"btn btn-default btn-block\" data-dismiss=\"modal\">Cancel</button>
         </div>
 
-        <span class=\"help-block text-center no-margin\">By continuing, you're confirming that you've read our <a href=\"#\">Terms &amp; Conditions</a> and <a href=\"#\">Cookie Policy</a></span>
-    </div>
+        ";
+        // line 61
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::termsConditions_cookiePolicy")        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
+        // line 62
+        echo "    </div>
 
     <!--
         <div class=\"form-group\">
@@ -126,14 +131,19 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
         return "D:\\OpenServer\\domains\\pictures.com.ua/plugins/rainlab/user/components/account/popup_register.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  85 => 62,  81 => 61,  19 => 1,);
     }
 }
 /* <!-- Registration form -->*/
 /* <div id="modal-registration" class="modal fade">*/
-/*     <div class="modal-dialog">*/
+/*     <div class="modal-dialog" style="width: 17%;">*/
 /*         <div class="modal-content login-form">*/
 /* */
 /* <form*/
@@ -191,7 +201,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 /*             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>*/
 /*         </div>*/
 /* */
-/*         <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>*/
+/*         {% partial __SELF__ ~ '::termsConditions_cookiePolicy' %}*/
 /*     </div>*/
 /* */
 /*     <!--*/

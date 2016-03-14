@@ -1,6 +1,6 @@
-1457965704s:3778:"a:2:{s:5:"mtime";i:1457949167;s:7:"content";s:3723:"<!-- Registration form -->
+1457969221s:3675:"a:2:{s:5:"mtime";i:1457968617;s:7:"content";s:3620:"<!-- Registration form -->
 <div id="modal-registration" class="modal fade">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="width: 17%;">
         <div class="modal-content login-form">
 
 <form
@@ -58,7 +58,7 @@
             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
         </div>
 
-        <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
+        {% partial __SELF__ ~ '::termsConditions_cookiePolicy' %}
     </div>
 
     <!--

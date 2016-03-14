@@ -1,6 +1,6 @@
 <!-- Registration form -->
 <div id="modal-registration" class="modal fade">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="width: 17%;">
         <div class="modal-content login-form">
 
 <form
@@ -58,7 +58,7 @@
             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>
         </div>
 
-        <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
+        {% partial __SELF__ ~ '::termsConditions_cookiePolicy' %}
     </div>
 
     <!--
