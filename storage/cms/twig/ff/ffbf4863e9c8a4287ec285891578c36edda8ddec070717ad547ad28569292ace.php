@@ -53,8 +53,6 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
         echo "\" rel=\"stylesheet\">
 
 
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -74,7 +72,7 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
                 <span class=\"icon-bar\"></span>
             </button>
             <a class=\"navbar-brand\" style=\"padding:15px\" href=\"";
-        // line 48
+        // line 46
         echo "/";
         echo "\">S</a>
         </div>
@@ -82,39 +80,39 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
         <div class=\"container-fluid\" style=\"font-family: MyriadPro;\">
 
             ";
-        // line 53
+        // line 51
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("navigation"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 54
+        // line 52
         echo "
         </div>
     </div>
 
 
     ";
-        // line 59
+        // line 57
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 60
+        // line 58
         echo "    ";
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("account"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 61
+        // line 59
         echo "    ";
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("formSubscribe"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 62
+        // line 60
         echo "
     <div class=\"row footer\" style=\"margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;\">
 
     ";
-        // line 65
+        // line 63
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 66
+        // line 64
         echo "
     </div>
 
@@ -128,28 +126,28 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 </div>
     <!-- Scripts -->
     <script src=\"";
-        // line 78
+        // line 76
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/js/jquery.js", 1 => "assets/js/bootstrap.min.js"));
-        // line 81
+        // line 79
         echo "\"></script>
 
     ";
-        // line 83
+        // line 81
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css" rel="stylesheet">'.PHP_EOL;
-        // line 84
+        // line 82
         echo "    ";
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
-        // line 85
+        // line 83
         echo "    ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 86
+        // line 84
         echo "
 </body>
 </html>";
@@ -167,7 +165,7 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 
     public function getDebugInfo()
     {
-        return array (  153 => 86,  149 => 85,  145 => 84,  138 => 83,  134 => 81,  132 => 78,  118 => 66,  114 => 65,  109 => 62,  104 => 61,  99 => 60,  97 => 59,  90 => 54,  86 => 53,  78 => 48,  53 => 25,  50 => 16,  47 => 15,  43 => 14,  37 => 11,  33 => 10,  28 => 8,  19 => 1,);
+        return array (  151 => 84,  147 => 83,  143 => 82,  136 => 81,  132 => 79,  130 => 76,  116 => 64,  112 => 63,  107 => 60,  102 => 59,  97 => 58,  95 => 57,  88 => 52,  84 => 51,  76 => 46,  53 => 25,  50 => 16,  47 => 15,  43 => 14,  37 => 11,  33 => 10,  28 => 8,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -193,10 +191,8 @@ class __TwigTemplate_2497db33199d4e73072a21e1bed1bf4951b7f19c506f4cdf3193f3c154b
 /*             'assets/css/slider.css',*/
 /*             'assets/css/custom.css',*/
 /*             'assets/css/slider.css',*/
-/*             'assets/404/css/404.css',*/
+/*             'assets/404/css/404.css'*/
 /*         ]|theme }}" rel="stylesheet">*/
-/* */
-/* */
 /* */
 /* */
 /*     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->*/

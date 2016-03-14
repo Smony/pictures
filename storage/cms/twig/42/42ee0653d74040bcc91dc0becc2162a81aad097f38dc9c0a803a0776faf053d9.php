@@ -16,16 +16,19 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div id=\"carousel-";
+        echo "<div class=\"row\">
+
+    <div id=\"carousel-";
+        // line 3
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "id", array()), "html", null, true);
-        echo "\" class=\"carousel slide\" data-ride=\"carousel\">
-  ";
-        // line 2
+        echo "\" class=\"carousel slide\" data-ride=\"carousel\" style=\"width: 80%; margin: 0 auto;\">
+      ";
+        // line 4
         if ((twig_length_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "images", array())) > 1)) {
-            // line 3
-            echo "  <ol class=\"carousel-indicators\">
-  ";
-            // line 4
+            // line 5
+            echo "      <ol class=\"carousel-indicators\">
+        ";
+            // line 6
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "images", array()));
             $context['loop'] = array(
@@ -42,8 +45,8 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["i"] => $context["image"]) {
-                // line 5
-                echo "    <li data-target=\"#carousel-";
+                // line 7
+                echo "        <li data-target=\"#carousel-";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "id", array()), "html", null, true);
                 echo "\" data-slide-to=\"";
                 echo twig_escape_filter($this->env, ($this->getAttribute($context["loop"], "index", array()) - 1), "html", null, true);
@@ -52,7 +55,7 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
                     echo " class=\"active\"";
                 }
                 echo "></li>
-  ";
+        ";
                 ++$context['loop']['index0'];
                 ++$context['loop']['index'];
                 $context['loop']['first'] = false;
@@ -65,19 +68,19 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['i'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 7
-            echo "  </ol>
-  ";
+            // line 9
+            echo "      </ol>
+      ";
         }
-        // line 9
+        // line 11
         echo "
-  ";
-        // line 10
+      ";
+        // line 12
         if ((twig_length_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "images", array())) > 0)) {
-            // line 11
-            echo "  <div class=\"carousel-inner\" role=\"listbox\">
-    ";
-            // line 12
+            // line 13
+            echo "      <div class=\"carousel-inner\" role=\"listbox\">
+        ";
+            // line 14
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "images", array()));
             $context['loop'] = array(
@@ -94,41 +97,41 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["i"] => $context["image"]) {
-                // line 13
-                echo "    <div class=\"item";
+                // line 15
+                echo "        <div class=\"item";
                 if ($this->getAttribute($context["loop"], "first", array())) {
                     echo " active";
                 }
                 echo "\">
-      <img src=\"";
-                // line 14
+          <img src=\"";
+                // line 16
                 echo twig_escape_filter($this->env, $this->getAttribute($context["image"], "path", array()), "html", null, true);
                 echo "\" alt=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["image"], "title", array()), "html", null, true);
                 echo "\">
-      <div class=\"carousel-caption\">
+          <div class=\"carousel-caption\">
 
-        ";
-                // line 17
+            ";
+                // line 19
                 if ($this->getAttribute($context["image"], "title", array())) {
                     echo "<h3>";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["image"], "title", array()), "html", null, true);
                     echo "</h3>";
                 }
-                // line 18
+                // line 20
                 echo "
-        ";
-                // line 19
+            ";
+                // line 21
                 if ($this->getAttribute($context["image"], "description", array())) {
                     echo "<p>";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["image"], "description", array()), "html", null, true);
                     echo "</p>";
                 }
-                // line 20
+                // line 22
                 echo "
-      </div>
-    </div>
-    ";
+          </div>
+        </div>
+        ";
                 ++$context['loop']['index0'];
                 ++$context['loop']['index'];
                 $context['loop']['first'] = false;
@@ -141,33 +144,35 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['i'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 24
-            echo "  </div>
-  ";
+            // line 26
+            echo "      </div>
+      ";
         }
-        // line 26
+        // line 28
         echo "
-  ";
-        // line 27
+      ";
+        // line 29
         if ((twig_length_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "images", array())) > 1)) {
-            // line 28
-            echo "    <a class=\"left carousel-control\" href=\"#carousel-";
+            // line 30
+            echo "      <a class=\"left carousel-control\" href=\"#carousel-";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "id", array()), "html", null, true);
             echo "\" role=\"button\" data-slide=\"prev\">
-      <span class=\"icon icon-prev\" aria-hidden=\"true\"></span>
-      <span class=\"sr-only\">Previous</span>
-    </a>
-    <a class=\"right carousel-control\" href=\"#carousel-";
-            // line 32
+        <span class=\"icon icon-prev\" aria-hidden=\"true\"></span>
+        <span class=\"sr-only\">Previous</span>
+      </a>
+      <a class=\"right carousel-control\" href=\"#carousel-";
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["carousel"]) ? $context["carousel"] : null), "id", array()), "html", null, true);
             echo "\" role=\"button\" data-slide=\"next\">
-      <span class=\"icon icon-next\" aria-hidden=\"true\"></span>
-      <span class=\"sr-only\">Next</span>
-    </a>
-  ";
+        <span class=\"icon icon-next\" aria-hidden=\"true\"></span>
+        <span class=\"sr-only\">Next</span>
+      </a>
+      ";
         }
-        // line 37
-        echo "</div>";
+        // line 39
+        echo "    </div>
+
+</div>";
     }
 
     public function getTemplateName()
@@ -182,43 +187,47 @@ class __TwigTemplate_33f38db6513200d6af70ee8c24dd86f689ee4b549c457880ea344492c05
 
     public function getDebugInfo()
     {
-        return array (  170 => 37,  162 => 32,  154 => 28,  152 => 27,  149 => 26,  145 => 24,  128 => 20,  122 => 19,  119 => 18,  113 => 17,  105 => 14,  98 => 13,  81 => 12,  78 => 11,  76 => 10,  73 => 9,  69 => 7,  46 => 5,  29 => 4,  26 => 3,  24 => 2,  19 => 1,);
+        return array (  173 => 39,  165 => 34,  157 => 30,  155 => 29,  152 => 28,  148 => 26,  131 => 22,  125 => 21,  122 => 20,  116 => 19,  108 => 16,  101 => 15,  84 => 14,  81 => 13,  79 => 12,  76 => 11,  72 => 9,  49 => 7,  32 => 6,  29 => 5,  27 => 4,  23 => 3,  19 => 1,);
     }
 }
-/* <div id="carousel-{{ carousel.id }}" class="carousel slide" data-ride="carousel">*/
-/*   {% if carousel.images|length > 1 %}*/
-/*   <ol class="carousel-indicators">*/
-/*   {% for i, image in carousel.images %}*/
-/*     <li data-target="#carousel-{{ carousel.id }}" data-slide-to="{{ loop.index - 1 }}"{% if loop.first %} class="active"{% endif %}></li>*/
-/*   {% endfor %}*/
-/*   </ol>*/
-/*   {% endif %}*/
+/* <div class="row">*/
 /* */
-/*   {% if carousel.images|length > 0 %}*/
-/*   <div class="carousel-inner" role="listbox">*/
-/*     {% for i, image in carousel.images %}*/
-/*     <div class="item{% if loop.first %} active{% endif %}">*/
-/*       <img src="{{ image.path }}" alt="{{ image.title }}">*/
-/*       <div class="carousel-caption">*/
+/*     <div id="carousel-{{ carousel.id }}" class="carousel slide" data-ride="carousel" style="width: 80%; margin: 0 auto;">*/
+/*       {% if carousel.images|length > 1 %}*/
+/*       <ol class="carousel-indicators">*/
+/*         {% for i, image in carousel.images %}*/
+/*         <li data-target="#carousel-{{ carousel.id }}" data-slide-to="{{ loop.index - 1 }}"{% if loop.first %} class="active"{% endif %}></li>*/
+/*         {% endfor %}*/
+/*       </ol>*/
+/*       {% endif %}*/
 /* */
-/*         {% if image.title %}<h3>{{ image.title }}</h3>{% endif %}*/
+/*       {% if carousel.images|length > 0 %}*/
+/*       <div class="carousel-inner" role="listbox">*/
+/*         {% for i, image in carousel.images %}*/
+/*         <div class="item{% if loop.first %} active{% endif %}">*/
+/*           <img src="{{ image.path }}" alt="{{ image.title }}">*/
+/*           <div class="carousel-caption">*/
 /* */
-/*         {% if image.description %}<p>{{ image.description }}</p>{% endif %}*/
+/*             {% if image.title %}<h3>{{ image.title }}</h3>{% endif %}*/
 /* */
+/*             {% if image.description %}<p>{{ image.description }}</p>{% endif %}*/
+/* */
+/*           </div>*/
+/*         </div>*/
+/*         {% endfor %}*/
 /*       </div>*/
-/*     </div>*/
-/*     {% endfor %}*/
-/*   </div>*/
-/*   {% endif %}*/
+/*       {% endif %}*/
 /* */
-/*   {% if carousel.images|length > 1 %}*/
-/*     <a class="left carousel-control" href="#carousel-{{ carousel.id }}" role="button" data-slide="prev">*/
-/*       <span class="icon icon-prev" aria-hidden="true"></span>*/
-/*       <span class="sr-only">Previous</span>*/
-/*     </a>*/
-/*     <a class="right carousel-control" href="#carousel-{{ carousel.id }}" role="button" data-slide="next">*/
-/*       <span class="icon icon-next" aria-hidden="true"></span>*/
-/*       <span class="sr-only">Next</span>*/
-/*     </a>*/
-/*   {% endif %}*/
+/*       {% if carousel.images|length > 1 %}*/
+/*       <a class="left carousel-control" href="#carousel-{{ carousel.id }}" role="button" data-slide="prev">*/
+/*         <span class="icon icon-prev" aria-hidden="true"></span>*/
+/*         <span class="sr-only">Previous</span>*/
+/*       </a>*/
+/*       <a class="right carousel-control" href="#carousel-{{ carousel.id }}" role="button" data-slide="next">*/
+/*         <span class="icon icon-next" aria-hidden="true"></span>*/
+/*         <span class="sr-only">Next</span>*/
+/*       </a>*/
+/*       {% endif %}*/
+/*     </div>*/
+/* */
 /* </div>*/
