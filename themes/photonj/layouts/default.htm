@@ -11,6 +11,10 @@ errorMessage = "Email already exists!"
 channelCode = "default"
 successMessage = "Success;)"
 redirectTo = 0
+
+[account]
+redirect = "account"
+paramCode = "code"
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +39,11 @@ redirectTo = 0
             'assets/css/slider.css',
             'assets/css/custom.css',
             'assets/css/slider.css',
-            'assets/404/css/404.css'
+            'assets/404/css/404.css',
         ]|theme }}" rel="stylesheet">
 
-    <style>
 
-    </style>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,7 +75,7 @@ redirectTo = 0
 
 
     {% page %}
-    
+    {% component 'account' %}
     {% component 'formSubscribe' %}
 
     <div class="row footer" style="margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;">

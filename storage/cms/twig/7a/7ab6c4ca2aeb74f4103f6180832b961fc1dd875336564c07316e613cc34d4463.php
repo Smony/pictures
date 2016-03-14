@@ -18,30 +18,28 @@ class __TwigTemplate_073a74379fa18adc39be8d9835cbb2ba4f766758a6ee01755be89dd7af4
         // line 1
         if ((isset($context["user"]) ? $context["user"] : null)) {
             // line 2
-            echo "<li id=\"wider_on_the_PC\">
+            echo "
+<li id=\"wider_on_the_PC\">
     <a href=\"";
-            // line 3
+            // line 4
             echo $this->env->getExtension('CMS')->pageFilter("account");
             echo "\">
        <button type=\"button\" class=\"btn btn-default\" id=\"navigate\"><i class=\"glyphicon glyphicon-user\"></i>&nbsp;";
-            // line 4
+            // line 5
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
             echo "</button>
     </a>
 </li>
 ";
         } else {
-            // line 8
+            // line 9
             echo "<a href=\"";
             echo $this->env->getExtension('CMS')->pageFilter("account");
             echo "\">
     <button type=\"button\" class=\"btn btn-default\" id=\"navigate\" style=\"margin-top: 0px;\">
-        <a href=\"";
-            // line 10
-            echo $this->env->getExtension('CMS')->pageFilter("account");
-            echo "\" class=\"btn-auth-group\">Login</a> / <a href=\"";
-            echo $this->env->getExtension('CMS')->pageFilter("account");
-            echo "\" class=\"btn-auth-group\">Register</a>
+        <a href=\"javascript:void(0);\" class=\"btn-auth-group\" data-toggle=\"modal\" data-target=\"#modal-login\">Login</a> /
+        <a href=\"javascript:void(0);\" class=\"btn-auth-group\" data-toggle=\"modal\" data-target=\"#modal-registration\">Register</a> /
+        <a href=\"javascript:void(0);\" class=\"btn-auth-group\" data-toggle=\"modal\" data-target=\"#modal-registration2\">Register2</a>
     </button>
 </a>
 ";
@@ -60,10 +58,11 @@ class __TwigTemplate_073a74379fa18adc39be8d9835cbb2ba4f766758a6ee01755be89dd7af4
 
     public function getDebugInfo()
     {
-        return array (  41 => 10,  35 => 8,  28 => 4,  24 => 3,  21 => 2,  19 => 1,);
+        return array (  36 => 9,  29 => 5,  25 => 4,  21 => 2,  19 => 1,);
     }
 }
 /* {% if user %}*/
+/* */
 /* <li id="wider_on_the_PC">*/
 /*     <a href="{{ 'account'|page }}">*/
 /*        <button type="button" class="btn btn-default" id="navigate"><i class="glyphicon glyphicon-user"></i>&nbsp;{{ user.name }}</button>*/
@@ -72,7 +71,9 @@ class __TwigTemplate_073a74379fa18adc39be8d9835cbb2ba4f766758a6ee01755be89dd7af4
 /* {% else %}*/
 /* <a href="{{ 'account'|page }}">*/
 /*     <button type="button" class="btn btn-default" id="navigate" style="margin-top: 0px;">*/
-/*         <a href="{{ 'account'|page }}" class="btn-auth-group">Login</a> / <a href="{{ 'account'|page }}" class="btn-auth-group">Register</a>*/
+/*         <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-login">Login</a> /*/
+/*         <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration">Register</a> /*/
+/*         <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration2">Register2</a>*/
 /*     </button>*/
 /* </a>*/
 /* {% endif %}*/

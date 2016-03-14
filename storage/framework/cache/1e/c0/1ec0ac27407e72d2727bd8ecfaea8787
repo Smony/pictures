@@ -1,4 +1,4 @@
-1457520154s:7039:"a:6:{s:5:"mtime";i:1456850476;s:7:"content";s:3397:"description = "Default layout"
+1457953229s:7172:"a:6:{s:5:"mtime";i:1457952539;s:7:"content";s:3453:"description = "Default layout"
 
 [formSubscribe]
 urlToUnsubscribe = "unsubscribe"
@@ -11,6 +11,10 @@ errorMessage = "Email already exists!"
 channelCode = "default"
 successMessage = "Success;)"
 redirectTo = 0
+
+[account]
+redirect = "account"
+paramCode = "code"
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +39,11 @@ redirectTo = 0
             'assets/css/slider.css',
             'assets/css/custom.css',
             'assets/css/slider.css',
-            'assets/404/css/404.css'
+            'assets/404/css/404.css',
         ]|theme }}" rel="stylesheet">
 
-    <style>
 
-    </style>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,7 +75,7 @@ redirectTo = 0
 
 
     {% page %}
-    
+    {% component 'account' %}
     {% component 'formSubscribe' %}
 
     <div class="row footer" style="margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;">
@@ -100,7 +103,7 @@ redirectTo = 0
     {% scripts %}
 
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:2:{s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Email already exists!";}s:8:"feedback";a:3:{s:11:"channelCode";s:7:"default";s:14:"successMessage";s:9:"Success;)";s:10:"redirectTo";s:1:"0";}}}s:4:"code";N;s:6:"markup";s:3088:"<!DOCTYPE html>
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:3:{s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Email already exists!";}s:8:"feedback";a:3:{s:11:"channelCode";s:7:"default";s:14:"successMessage";s:9:"Success;)";s:10:"redirectTo";s:1:"0";}s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}}}s:4:"code";N;s:6:"markup";s:3089:"<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -123,12 +126,11 @@ redirectTo = 0
             'assets/css/slider.css',
             'assets/css/custom.css',
             'assets/css/slider.css',
-            'assets/404/css/404.css'
+            'assets/404/css/404.css',
         ]|theme }}" rel="stylesheet">
 
-    <style>
 
-    </style>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -160,7 +162,7 @@ redirectTo = 0
 
 
     {% page %}
-    
+    {% component 'account' %}
     {% component 'formSubscribe' %}
 
     <div class="row footer" style="margin-right: 0px;  margin-left: 0px; padding-top: 25px; padding-bottom: 20px;">

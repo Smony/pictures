@@ -1,4 +1,4 @@
-1457521811s:4850:"a:6:{s:5:"mtime";i:1457517950;s:7:"content";s:2308:"title = "Account"
+1457952654s:4862:"a:6:{s:5:"mtime";i:1457947500;s:7:"content";s:2314:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -86,6 +86,9 @@ function onTest()
             {% else %}
             {% endif %}
         {% endfor %}
+
+
+
         <!-- END UPLOADS FILES -->
 
             <!--
@@ -148,7 +151,7 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:1263:"<div class="conteiner">
+";s:6:"markup";s:1269:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
@@ -172,6 +175,9 @@ function onTest()
             {% else %}
             {% endif %}
         {% endfor %}
+
+
+
         <!-- END UPLOADS FILES -->
 
             <!--

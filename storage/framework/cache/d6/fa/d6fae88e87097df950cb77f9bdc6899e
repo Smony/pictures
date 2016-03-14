@@ -1,12 +1,12 @@
-1457521812s:483:"a:2:{s:5:"mtime";i:1456819426;s:7:"content";s:429:"{% if not user %}
+1457953073s:497:"a:2:{s:5:"mtime";i:1457949256;s:7:"content";s:443:"{% if not user %}
 
     <div class="row">
         <div class="col-md-6">
-            {% partial __SELF__ ~ '::signin' %}
+            {% partial __SELF__ ~ '::popup_singin' %}
         </div>
 
         <div class="col-md-6">
-            {% partial __SELF__ ~ '::register' %}
+            {% partial __SELF__ ~ '::popup_register' %}
         </div>
     </div>
 
@@ -18,4 +18,5 @@
 
     {% partial __SELF__ ~ '::deactivate_link' %}
 
-{% endif %}";}";
+{% endif %}
+";}";

@@ -24,7 +24,7 @@ class __TwigTemplate_520f2a33fdbf3b48e5c2cff82289294a68b9f7268bd8213aad3b215d0a3
             ";
             // line 5
             $context['__cms_partial_params'] = [];
-            echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::signin")            , $context['__cms_partial_params']            );
+            echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::popup_singin")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
             // line 6
             echo "        </div>
@@ -33,7 +33,7 @@ class __TwigTemplate_520f2a33fdbf3b48e5c2cff82289294a68b9f7268bd8213aad3b215d0a3
             ";
             // line 9
             $context['__cms_partial_params'] = [];
-            echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::register")            , $context['__cms_partial_params']            );
+            echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::popup_register")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
             // line 10
             echo "        </div>
@@ -87,11 +87,11 @@ class __TwigTemplate_520f2a33fdbf3b48e5c2cff82289294a68b9f7268bd8213aad3b215d0a3
 /* */
 /*     <div class="row">*/
 /*         <div class="col-md-6">*/
-/*             {% partial __SELF__ ~ '::signin' %}*/
+/*             {% partial __SELF__ ~ '::popup_singin' %}*/
 /*         </div>*/
 /* */
 /*         <div class="col-md-6">*/
-/*             {% partial __SELF__ ~ '::register' %}*/
+/*             {% partial __SELF__ ~ '::popup_register' %}*/
 /*         </div>*/
 /*     </div>*/
 /* */
@@ -104,3 +104,4 @@ class __TwigTemplate_520f2a33fdbf3b48e5c2cff82289294a68b9f7268bd8213aad3b215d0a3
 /*     {% partial __SELF__ ~ '::deactivate_link' %}*/
 /* */
 /* {% endif %}*/
+/* */

@@ -1,7 +1,8 @@
-1457520155s:1324:"a:6:{s:5:"mtime";i:1456819481;s:7:"content";s:580:"[session]
+1457953073s:1814:"a:6:{s:5:"mtime";i:1457949895;s:7:"content";s:827:"[session]
 security = "all"
 ==
 {% if user %}
+
 <li id="wider_on_the_PC">
     <a href="{{ 'account'|page }}">
        <button type="button" class="btn btn-default" id="navigate"><i class="glyphicon glyphicon-user"></i>&nbsp;{{ user.name }}</button>
@@ -10,11 +11,16 @@ security = "all"
 {% else %}
 <a href="{{ 'account'|page }}">
     <button type="button" class="btn btn-default" id="navigate" style="margin-top: 0px;">
-        <a href="{{ 'account'|page }}" class="btn-auth-group">Login</a> / <a href="{{ 'account'|page }}" class="btn-auth-group">Register</a>
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-login">Login</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration">Register</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration2">Register2</a>
     </button>
 </a>
 {% endif %}
-";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"session";a:1:{s:8:"security";s:3:"all";}}}s:4:"code";N;s:6:"markup";s:545:"{% if user %}
+
+
+";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:1:{s:7:"session";a:1:{s:8:"security";s:3:"all";}}}s:4:"code";N;s:6:"markup";s:788:"{% if user %}
+
 <li id="wider_on_the_PC">
     <a href="{{ 'account'|page }}">
        <button type="button" class="btn btn-default" id="navigate"><i class="glyphicon glyphicon-user"></i>&nbsp;{{ user.name }}</button>
@@ -23,7 +29,9 @@ security = "all"
 {% else %}
 <a href="{{ 'account'|page }}">
     <button type="button" class="btn btn-default" id="navigate" style="margin-top: 0px;">
-        <a href="{{ 'account'|page }}" class="btn-auth-group">Login</a> / <a href="{{ 'account'|page }}" class="btn-auth-group">Register</a>
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-login">Login</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration">Register</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration2">Register2</a>
     </button>
 </a>
 {% endif %}";}";

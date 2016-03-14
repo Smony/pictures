@@ -2,6 +2,7 @@
 security = "all"
 ==
 {% if user %}
+
 <li id="wider_on_the_PC">
     <a href="{{ 'account'|page }}">
        <button type="button" class="btn btn-default" id="navigate"><i class="glyphicon glyphicon-user"></i>&nbsp;{{ user.name }}</button>
@@ -10,7 +11,11 @@ security = "all"
 {% else %}
 <a href="{{ 'account'|page }}">
     <button type="button" class="btn btn-default" id="navigate" style="margin-top: 0px;">
-        <a href="{{ 'account'|page }}" class="btn-auth-group">Login</a> / <a href="{{ 'account'|page }}" class="btn-auth-group">Register</a>
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-login">Login</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration">Register</a> /
+        <a href="javascript:void(0);" class="btn-auth-group" data-toggle="modal" data-target="#modal-registration2">Register2</a>
     </button>
 </a>
 {% endif %}
+
+
