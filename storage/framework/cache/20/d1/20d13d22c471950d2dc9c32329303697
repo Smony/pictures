@@ -1,9 +1,12 @@
-1457371424s:423:"a:2:{s:5:"mtime";i:1457368022;s:7:"content";s:369:"{% for item in items %}
+1458056042s:443:"a:2:{s:5:"mtime";i:1458055396;s:7:"content";s:389:"{% for item in items %}
     <li class="list-group-item">
         <input type="hidden" name="items[]" value="{{ item }}" />
-        
+
+
+            {{ user.name }}
+
         {{ item }}
-12
+
         <button type="button" 
             class="close pull-right" 
             aria-hidden="true" 
