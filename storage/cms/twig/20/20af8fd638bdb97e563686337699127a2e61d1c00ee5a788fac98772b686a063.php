@@ -71,18 +71,21 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
             </div>
         </div>
 
-        <div class=\"content-divider text-muted form-group\"><span>hidden</span></div>
+        <div class=\"content-divider text-muted form-group\"><span>Select a plan below</span></div>
 
-        <div class=\"form-group has-feedback has-feedback-left\">
-            <input name=\"a_plan\"
-                   type=\"number\"
-                   class=\"form-control\"
-                   id=\"registerA_plan\"
-                   placeholder=\"plan\" />
-            <div class=\"form-control-feedback\">
-                <i class=\"icon-user-lock text-muted\"></i>
-            </div>
-        </div>
+        <div class=\"bootstrap-select bs-select-hidden\">
+
+            <select name=\"a_plan\" class=\"form-control bootstrap-select bs-select-hidden\" data-width=\"100%\">
+                <option value=\"1\">FREE</option>
+                <option value=\"2\">BASIC</option>
+                <option value=\"3\">IMAGE</option>
+                <option value=\"4\">CUSTOM</option>
+            </select>
+
+         </div>
+        <br />
+
+
 
         <div class=\"form-group\">
             <button type=\"submit\" class=\"btn bg-blue btn-block\">Register <i class=\"icon-circle-right2 position-right\"></i></button>
@@ -90,11 +93,11 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
         </div>
 
         ";
-        // line 74
+        // line 77
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction(((isset($context["__SELF__"]) ? $context["__SELF__"] : null) . "::termsConditions_cookiePolicy")        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 75
+        // line 78
         echo "    </div>
 
     <!--
@@ -151,7 +154,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 
     public function getDebugInfo()
     {
-        return array (  98 => 75,  94 => 74,  19 => 1,);
+        return array (  101 => 78,  97 => 77,  19 => 1,);
     }
 }
 /* <!-- Registration form -->*/
@@ -209,18 +212,21 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 /*             </div>*/
 /*         </div>*/
 /* */
-/*         <div class="content-divider text-muted form-group"><span>hidden</span></div>*/
+/*         <div class="content-divider text-muted form-group"><span>Select a plan below</span></div>*/
 /* */
-/*         <div class="form-group has-feedback has-feedback-left">*/
-/*             <input name="a_plan"*/
-/*                    type="number"*/
-/*                    class="form-control"*/
-/*                    id="registerA_plan"*/
-/*                    placeholder="plan" />*/
-/*             <div class="form-control-feedback">*/
-/*                 <i class="icon-user-lock text-muted"></i>*/
-/*             </div>*/
-/*         </div>*/
+/*         <div class="bootstrap-select bs-select-hidden">*/
+/* */
+/*             <select name="a_plan" class="form-control bootstrap-select bs-select-hidden" data-width="100%">*/
+/*                 <option value="1">FREE</option>*/
+/*                 <option value="2">BASIC</option>*/
+/*                 <option value="3">IMAGE</option>*/
+/*                 <option value="4">CUSTOM</option>*/
+/*             </select>*/
+/* */
+/*          </div>*/
+/*         <br />*/
+/* */
+/* */
 /* */
 /*         <div class="form-group">*/
 /*             <button type="submit" class="btn bg-blue btn-block">Register <i class="icon-circle-right2 position-right"></i></button>*/

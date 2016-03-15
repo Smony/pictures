@@ -53,18 +53,21 @@
             </div>
         </div>
 
-        <div class="content-divider text-muted form-group"><span>hidden</span></div>
+        <div class="content-divider text-muted form-group"><span>Select a plan below</span></div>
 
-        <div class="form-group has-feedback has-feedback-left">
-            <input name="a_plan"
-                   type="number"
-                   class="form-control"
-                   id="registerA_plan"
-                   placeholder="plan" />
-            <div class="form-control-feedback">
-                <i class="icon-user-lock text-muted"></i>
-            </div>
-        </div>
+        <div class="bootstrap-select bs-select-hidden">
+
+            <select name="a_plan" class="form-control bootstrap-select bs-select-hidden" data-width="100%">
+                <option value="1">FREE</option>
+                <option value="2">BASIC</option>
+                <option value="3">IMAGE</option>
+                <option value="4">CUSTOM</option>
+            </select>
+
+         </div>
+        <br />
+
+
 
         <div class="form-group">
             <button type="submit" class="btn bg-blue btn-block">Register <i class="icon-circle-right2 position-right"></i></button>

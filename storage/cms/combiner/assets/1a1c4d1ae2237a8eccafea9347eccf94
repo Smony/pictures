@@ -11,4 +11,11 @@
         });
     });
 
+
+    $("#PURCHASE_LINK").click(function(){
+        $('#PURCHASE_LINK').toggle();
+    });
+
+
+
 }(window.jQuery);
