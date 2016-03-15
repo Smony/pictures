@@ -163,15 +163,21 @@ description = "Admin layout"
         {% else %}
             <p class="navbar-text"><span class="label bg-warning-400">Offline</span></p>
         {% endif %}
-        {% if user.a_plan == 1 %}
-            <p class="navbar-text">SELECT A PLAN BELOW : <span class="label label-info">FREE (50 IMAGE FOR FREE)</span></p>
-        {% elseif user.a_plan == 2 %}
-            <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">BASIC RETOUCHING CREATIVE EDITION</span></p>
-        {% elseif user.a_plan == 3 %}
-            <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">IMAGE SELECTION</span></p>
-        {% elseif user.a_plan == 4 %}
-            <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">CUSTOM COLOR CORRECTION</span></p>
+
+        {% for role in user.groups() %}
+        {% if role.code == 'clients' %}
+            {% if user.a_plan == 1 %}
+                <p class="navbar-text">SELECT A PLAN BELOW : <span class="label label-info">FREE (50 IMAGE FOR FREE)</span></p>
+            {% elseif user.a_plan == 2 %}
+                <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">BASIC RETOUCHING CREATIVE EDITION</span></p>
+            {% elseif user.a_plan == 3 %}
+                <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">IMAGE SELECTION</span></p>
+            {% elseif user.a_plan == 4 %}
+                <p class="navbar-text">SELECT A PLAN BELOW : <span class="badge bg-warning-400">CUSTOM COLOR CORRECTION</span></p>
+            {% endif %}
+        {% else %}
         {% endif %}
+        {% endfor %}
 
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown language-switch">
@@ -379,7 +385,7 @@ description = "Admin layout"
                     <li>
                         <a
                                 href="javascript:;"
-                                onclick="$('#accountUpdateForm').toggle()"><i class="glyphicon glyphicon-circle-arrow-down"></i>
+                                onclick="$('#accountUpdateForm').toggle()"><i class="glyphicon glyphicon glyphicon-pencil"></i>
                             <span>Update account</span>
                         </a>
                     </li>
