@@ -1,5 +1,9 @@
 <?php namespace RainLab\User\Components;
 
+
+
+use Yandex\Disk\DiskClient;
+
 use Lang;
 use Auth;
 use Mail;
@@ -15,6 +19,8 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use RainLab\User\Models\Settings as UserSettings;
 use Exception;
+
+include 'phar://yandex-php-library_master.phar/vendor/autoload.php';
 
 class Account extends ComponentBase
 {
@@ -150,17 +156,38 @@ class Account extends ComponentBase
     /**
      * Register the user
      */
+
+
+
     public function onRegister()
     {
         try {
             if (!UserSettings::get('allow_registration', true)) {
                 throw new ApplicationException(Lang::get('rainlab.user::lang.account.registration_disabled'));
             }
+            $data = post();
+           /*
+           * CREATE HOLDER YANDEX DISK
+           */
+
+            define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+
+            $diskClient = new DiskClient(ACCESS_TOKEN);
+            $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
+
+
+
+            /*
+                $diskSpace = $diskClient->diskSpaceInfo();
+
+                Log::info(var_export($diskSpace, true));
+            */
+
 
             /*
              * Validate input
              */
-            $data = post();
+            #$data = post();
 
             if (!array_key_exists('password_confirmation', $data)) {
                 $data['password_confirmation'] = post('password');
@@ -184,11 +211,15 @@ class Account extends ComponentBase
             /*
              * Register user
              */
+
+            $data['message_upload'] = "test message";
+
             $requireActivation = UserSettings::get('require_activation', true);
             $automaticActivation = UserSettings::get('activate_mode') == UserSettings::ACTIVATE_AUTO;
             $userActivation = UserSettings::get('activate_mode') == UserSettings::ACTIVATE_USER;
             $user = Auth::register($data, $automaticActivation);
 
+            $diskClient->createDirectory($data['email']); //CREATE YANDEX DISK HOLDER
             /*
              * Activation is by the user, send the email
              */

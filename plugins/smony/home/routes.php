@@ -19,7 +19,7 @@
                 $path = $user->email;
 
             #SAVE TO MESSAGE.TXT
-
+            /*
                 $file = fopen ("message.txt","r+");
                 $str = "12";
 
@@ -32,7 +32,7 @@
                     fputs ( $file, $str);
                 }
                 fclose ($file);
-
+            */
             #ENDSAVE
 
                 if (!empty($_FILES)) {
@@ -51,7 +51,7 @@
                             'name' => time() . '-' . $_FILES['file']['name']
                         )
                     );
-
+                /*
                     $diskClient->uploadFile(
                         '/' . $path . '/',
                         array(
@@ -60,6 +60,7 @@
                             'name' => $messageNew
                         )
                     );
+                */
                 }
 
 

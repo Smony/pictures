@@ -1,4 +1,4 @@
-1458218856s:4862:"a:6:{s:5:"mtime";i:1458123305;s:7:"content";s:2314:"title = "Account"
+1458234433s:7747:"a:6:{s:5:"mtime";i:1458233184;s:7:"content";s:3756:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -35,22 +35,58 @@ function onInit()
 
 function onStart()
 {
-    #$user = Auth::getUser();
-    #echo $user;
+        use Yandex\Disk\DiskClient;
 
-    $file_array = file("message.txt");
+        require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
 
-    if(!$file_array)
-    {
-        echo("Ошибка открытия файла");
-    }
-    else
-    {
-        for($i=0; $i < count($file_array); $i++)
-        {
-            printf("%s<br>", $file_array[$i]);
+        define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+
+        $user = Auth::getUser();
+
+        $diskClient = new DiskClient(ACCESS_TOKEN);
+        $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
+        #$diskSpace = $diskClient->diskSpaceInfo();
+        $path = $user->email;
+
+        // Получаем список файлов из директории
+
+        $dirContent = $diskClient->directoryContents('/'.$path);
+        $files = $diskClient->directoryContents('/'.$path);
+
+        foreach ($dirContent as $dirItem) {
+        if ($dirItem['resourceType'] === 'dir') {
+        echo 'Директория "' . $dirItem['displayName'] . '" была создана ' . date(
+        'Y-m-d в H:i:s',
+        strtotime($dirItem['creationDate'])
+        ) . '<br />';
+            } else {
+            echo 'Файл "' . $dirItem['displayName'] . '" с размером в ' . $dirItem['contentLength'] . ' байт был создан ' . date(
+            'Y-m-d в H:i:s',
+            strtotime($dirItem['creationDate'])
+            ) . '<br />';
+            }
         }
-    }
+
+
+
+/*
+                #$user = Auth::getUser();
+                #echo $user;
+
+                $file_array = file("message.txt");
+
+                if(!$file_array)
+                {
+                    echo("Ошибка открытия файла");
+                }
+                else
+                {
+                    for($i=0; $i < count($file_array); $i++)
+                    {
+                        printf("%s<br>", $file_array[$i]);
+                    }
+                }
+*/
 
 }
 
@@ -89,6 +125,8 @@ function onTest()
         {% endfor %}
 
 
+
+
         <!-- END UPLOADS FILES -->
 
             <!--
@@ -105,7 +143,7 @@ function onTest()
         </div>
         <div class="col-lg-1"></div>
     </div>
-</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:3:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}s:8:"demoTodo";a:1:{s:3:"max";s:2:"10";}}}s:4:"code";s:832:"
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:7:"Account";s:3:"url";s:8:"/account";s:6:"layout";s:5:"admin";s:9:"is_hidden";s:1:"0";s:10:"components";a:3:{s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:1:"s";}s:8:"demoTodo";a:1:{s:3:"max";s:2:"10";}}}s:4:"code";s:2270:"
 function onInit()
 {
     //$this->imageUploader->bindModel('files', Project::find(1));
@@ -126,22 +164,58 @@ function onInit()
 
 function onStart()
 {
-    #$user = Auth::getUser();
-    #echo $user;
+        use Yandex\Disk\DiskClient;
 
-    $file_array = file("message.txt");
+        require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
 
-    if(!$file_array)
-    {
-        echo("Ошибка открытия файла");
-    }
-    else
-    {
-        for($i=0; $i < count($file_array); $i++)
-        {
-            printf("%s<br>", $file_array[$i]);
+        define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+
+        $user = Auth::getUser();
+
+        $diskClient = new DiskClient(ACCESS_TOKEN);
+        $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
+        #$diskSpace = $diskClient->diskSpaceInfo();
+        $path = $user->email;
+
+        // Получаем список файлов из директории
+
+        $dirContent = $diskClient->directoryContents('/'.$path);
+        $files = $diskClient->directoryContents('/'.$path);
+
+        foreach ($dirContent as $dirItem) {
+        if ($dirItem['resourceType'] === 'dir') {
+        echo 'Директория "' . $dirItem['displayName'] . '" была создана ' . date(
+        'Y-m-d в H:i:s',
+        strtotime($dirItem['creationDate'])
+        ) . '<br />';
+            } else {
+            echo 'Файл "' . $dirItem['displayName'] . '" с размером в ' . $dirItem['contentLength'] . ' байт был создан ' . date(
+            'Y-m-d в H:i:s',
+            strtotime($dirItem['creationDate'])
+            ) . '<br />';
+            }
         }
-    }
+
+
+
+/*
+                #$user = Auth::getUser();
+                #echo $user;
+
+                $file_array = file("message.txt");
+
+                if(!$file_array)
+                {
+                    echo("Ошибка открытия файла");
+                }
+                else
+                {
+                    for($i=0; $i < count($file_array); $i++)
+                    {
+                        printf("%s<br>", $file_array[$i]);
+                    }
+                }
+*/
 
 }
 
@@ -151,7 +225,7 @@ function onTest()
     $value2 = post('value2');
     $this['answer'] = $value1 + $value2;
 }
-";s:6:"markup";s:1269:"<div class="conteiner">
+";s:6:"markup";s:1273:"<div class="conteiner">
     <div class="row">
         <div class="col-lg-1"></div>
 
@@ -176,6 +250,8 @@ function onTest()
             {% else %}
             {% endif %}
         {% endfor %}
+
+
 
 
         <!-- END UPLOADS FILES -->

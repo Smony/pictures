@@ -47,7 +47,8 @@ class User extends UserBase
         'password',
         'password_confirmation',
         //custom
-        'a_plan'
+        'a_plan',
+        'message_upload'
     ];
 
     /**

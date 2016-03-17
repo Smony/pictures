@@ -1,4 +1,4 @@
-1458205329s:846:"a:2:{s:5:"mtime";i:1457367401;s:7:"content";s:792:"<form
+1458234434s:881:"a:2:{s:5:"mtime";i:1458225423;s:7:"content";s:827:"<form
     data-request="{{ __SELF__ }}::onAddItem"
     data-request-update="'{{ __SELF__ }}::list': '#result'"
     data-request-success="$('#input-item').val('')">
@@ -14,7 +14,9 @@
                 </span>
             </div>
         </div>
+        {{ user.message_upload }}
         <ul class="list-group" id="result">
+
         </ul>
     </div>
 </form>

@@ -38,7 +38,12 @@ class __TwigTemplate_150749c6a343dce76aa566c0e7a0bb220cc2fa6553cbb4677af0e650380
                 </span>
             </div>
         </div>
+        ";
+        // line 17
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "message_upload", array()), "html", null, true);
+        echo "
         <ul class=\"list-group\" id=\"result\">
+
         </ul>
     </div>
 </form>
@@ -57,7 +62,7 @@ class __TwigTemplate_150749c6a343dce76aa566c0e7a0bb220cc2fa6553cbb4677af0e650380
 
     public function getDebugInfo()
     {
-        return array (  26 => 3,  22 => 2,  19 => 1,);
+        return array (  43 => 17,  26 => 3,  22 => 2,  19 => 1,);
     }
 }
 /* <form*/
@@ -76,7 +81,9 @@ class __TwigTemplate_150749c6a343dce76aa566c0e7a0bb220cc2fa6553cbb4677af0e650380
 /*                 </span>*/
 /*             </div>*/
 /*         </div>*/
+/*         {{ user.message_upload }}*/
 /*         <ul class="list-group" id="result">*/
+/* */
 /*         </ul>*/
 /*     </div>*/
 /* </form>*/

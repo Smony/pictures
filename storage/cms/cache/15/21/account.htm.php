@@ -1,5 +1,5 @@
 <?php 
-class Cms56e9328169455_1390394825Class extends \Cms\Classes\PageCode
+use Yandex\Disk\DiskClient;class Cms56eadf62afe7f_1504486654Class extends \Cms\Classes\PageCode
 {
 public function onInit()
 {
@@ -20,22 +20,58 @@ public function onInit()
 }
 public function onStart()
 {
-    #$user = Auth::getUser();
-    #echo $user;
+        
 
-    $file_array = file("message.txt");
+        require_once 'phar://yandex-php-library_master.phar/vendor/autoload.php';
 
-    if(!$file_array)
-    {
-        echo("Ошибка открытия файла");
-    }
-    else
-    {
-        for($i=0; $i < count($file_array); $i++)
-        {
-            printf("%s<br>", $file_array[$i]);
+        define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
+
+        $user = Auth::getUser();
+
+        $diskClient = new DiskClient(ACCESS_TOKEN);
+        $diskClient->setServiceScheme(DiskClient::HTTPS_SCHEME);
+        #$diskSpace = $diskClient->diskSpaceInfo();
+        $path = $user->email;
+
+        // Получаем список файлов из директории
+
+        $dirContent = $diskClient->directoryContents('/'.$path);
+        $files = $diskClient->directoryContents('/'.$path);
+
+        foreach ($dirContent as $dirItem) {
+        if ($dirItem['resourceType'] === 'dir') {
+        echo 'Директория "' . $dirItem['displayName'] . '" была создана ' . date(
+        'Y-m-d в H:i:s',
+        strtotime($dirItem['creationDate'])
+        ) . '<br />';
+            } else {
+            echo 'Файл "' . $dirItem['displayName'] . '" с размером в ' . $dirItem['contentLength'] . ' байт был создан ' . date(
+            'Y-m-d в H:i:s',
+            strtotime($dirItem['creationDate'])
+            ) . '<br />';
+            }
         }
-    }
+
+
+
+/*
+                #$user = Auth::getUser();
+                #echo $user;
+
+                $file_array = file("message.txt");
+
+                if(!$file_array)
+                {
+                    echo("Ошибка открытия файла");
+                }
+                else
+                {
+                    for($i=0; $i < count($file_array); $i++)
+                    {
+                        printf("%s<br>", $file_array[$i]);
+                    }
+                }
+*/
 
 }
 public function onTest()
