@@ -18,7 +18,7 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
         // line 1
         echo "<!-- Login form -->
 <div id=\"modal-login\" class=\"modal fade\">
-    <div class=\"modal-dialog\" style=\"width: 17%;\">
+    <div class=\"modal-dialog\" style=\"width: 270px;\">
         <div class=\"modal-content login-form\">
 <form
         data-request=\"onSignin\">
@@ -120,7 +120,7 @@ class __TwigTemplate_a9b05b5367335fd1676bd0472b258777fa58c36741621902e8188e8cdf3
 }
 /* <!-- Login form -->*/
 /* <div id="modal-login" class="modal fade">*/
-/*     <div class="modal-dialog" style="width: 17%;">*/
+/*     <div class="modal-dialog" style="width: 270px;">*/
 /*         <div class="modal-content login-form">*/
 /* <form*/
 /*         data-request="onSignin">*/

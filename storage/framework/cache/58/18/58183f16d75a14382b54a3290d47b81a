@@ -1,4 +1,4 @@
-1458056689s:4862:"a:6:{s:5:"mtime";i:1457947500;s:7:"content";s:2314:"title = "Account"
+1458218856s:4862:"a:6:{s:5:"mtime";i:1458123305;s:7:"content";s:2314:"title = "Account"
 url = "/account"
 layout = "admin"
 is_hidden = 0
@@ -79,6 +79,7 @@ function onTest()
                     <div class="dz-message needsclick">
                         Drop files here or click to upload.<br>
                     </div>
+
                     {% component 'demoTodo' %}
 
                 </div>
@@ -86,7 +87,6 @@ function onTest()
             {% else %}
             {% endif %}
         {% endfor %}
-
 
 
         <!-- END UPLOADS FILES -->
@@ -168,6 +168,7 @@ function onTest()
                     <div class="dz-message needsclick">
                         Drop files here or click to upload.<br>
                     </div>
+
                     {% component 'demoTodo' %}
 
                 </div>
@@ -175,7 +176,6 @@ function onTest()
             {% else %}
             {% endif %}
         {% endfor %}
-
 
 
         <!-- END UPLOADS FILES -->

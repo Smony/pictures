@@ -1,9 +1,34 @@
-1458056042s:443:"a:2:{s:5:"mtime";i:1458055396;s:7:"content";s:389:"{% for item in items %}
+1458151224s:1164:"a:2:{s:5:"mtime";i:1458141655;s:7:"content";s:1109:"<!--
+<script>
+
+    var fso, ts;
+    var ForWriting= 2;
+    fso = new ActiveXObject("Scripting.FileSystemObject");
+    ts = fso.OpenTextFile("message.txt", ForWriting, true);
+
+
+    function CreateFile()
+    {
+        var fso, tf;
+        fso = new ActiveXObject("Scripting.FileSystemObject");
+        tf = fso.CreateTextFile("message.txt", true);
+        // Вставка строки с переносом на новую.
+        tf.WriteLine("Testing 1, 2, 3.") ;
+        // Вставка 3 пустых строк.
+        tf.WriteBlankLines(3) ;
+        // Вставка новой строки, без переноса.
+        tf.Write ("This is a test.");
+        ' Закрытие файла.
+        tf.Close();
+    }
+
+</script>
+-->
+12
+{% for item in items %}
     <li class="list-group-item">
         <input type="hidden" name="items[]" value="{{ item }}" />
 
-
-            {{ user.name }}
 
         {{ item }}
 

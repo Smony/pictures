@@ -18,7 +18,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
         // line 1
         echo "<!-- Registration form -->
 <div id=\"modal-registration\" class=\"modal fade\">
-    <div class=\"modal-dialog\" style=\"width: 17%;\">
+    <div class=\"modal-dialog\" style=\"width: 270px;\">
         <div class=\"modal-content login-form\">
 
 <form
@@ -159,7 +159,7 @@ class __TwigTemplate_a1a31157bfe52c9f3282fce7f5f92597f17cdfd128c5b78bab948e60a18
 }
 /* <!-- Registration form -->*/
 /* <div id="modal-registration" class="modal fade">*/
-/*     <div class="modal-dialog" style="width: 17%;">*/
+/*     <div class="modal-dialog" style="width: 270px;">*/
 /*         <div class="modal-content login-form">*/
 /* */
 /* <form*/

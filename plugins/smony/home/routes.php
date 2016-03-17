@@ -7,6 +7,9 @@
 
     #UPLOAD FILES ALL FOR YANDEX DISK
 
+
+
+
             $user = Auth::getUser();
                 define('ACCESS_TOKEN', 'bbbef0b0944e4ce79219ac5884cbbebc');
 
@@ -18,7 +21,7 @@
             #SAVE TO MESSAGE.TXT
 
                 $file = fopen ("message.txt","r+");
-                $str = "qqqqqqqqqqqqqqqq";
+                $str = "12";
 
                 if ( !$file )
                 {
@@ -30,6 +33,7 @@
                 }
                 fclose ($file);
 
+            #ENDSAVE
 
                 if (!empty($_FILES)) {
 

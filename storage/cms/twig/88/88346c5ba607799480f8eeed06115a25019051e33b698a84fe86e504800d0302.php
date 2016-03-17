@@ -45,29 +45,29 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
                     <div class=\"dz-message needsclick\">
                         Drop files here or click to upload.<br>
                     </div>
+
                     ";
-                // line 18
+                // line 19
                 $context['__cms_component_params'] = [];
                 echo $this->env->getExtension('CMS')->componentFunction("demoTodo"                , $context['__cms_component_params']                );
                 unset($context['__cms_component_params']);
-                // line 19
+                // line 20
                 echo "
                 </div>
 
             ";
             } else {
-                // line 23
+                // line 24
                 echo "            ";
             }
-            // line 24
+            // line 25
             echo "        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['role'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 26
         echo "
-
 
         <!-- END UPLOADS FILES -->
 
@@ -105,7 +105,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 
     public function getDebugInfo()
     {
-        return array (  87 => 38,  83 => 37,  69 => 25,  63 => 24,  60 => 23,  54 => 19,  50 => 18,  42 => 12,  39 => 11,  35 => 10,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  87 => 38,  83 => 37,  70 => 26,  64 => 25,  61 => 24,  55 => 20,  51 => 19,  42 => 12,  39 => 11,  35 => 10,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* <div class="conteiner">*/
@@ -125,6 +125,7 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*                     <div class="dz-message needsclick">*/
 /*                         Drop files here or click to upload.<br>*/
 /*                     </div>*/
+/* */
 /*                     {% component 'demoTodo' %}*/
 /* */
 /*                 </div>*/
@@ -132,7 +133,6 @@ class __TwigTemplate_d3d369083f90768363ab9eb741d8222d331d0a292f25e31e867f192ef02
 /*             {% else %}*/
 /*             {% endif %}*/
 /*         {% endfor %}*/
-/* */
 /* */
 /* */
 /*         <!-- END UPLOADS FILES -->*/
